@@ -16,6 +16,8 @@ $exclude                 = array('.', '..', 'Component');
 $appLevelFolders     = scandir($basePath);
 $appLevelControllers = array();
 
+$completeControllerData = array();
+$dataAppLevel           = array();
 foreach ($appLevelFolders as $appLevelFolder) {
 
     if (in_array($appLevelFolder, $appLevelExcludeArray)) {
@@ -32,40 +34,40 @@ foreach ($appLevelFolders as $appLevelFolder) {
         if (in_array($appLevelController, $exclude)) {
             continue;
         }
-        getControllerMessages($appLevelControllersBasePtah, $appLevelController);
+        $dataAppLevel[$appLevelController] = getControllerMessages($appLevelControllersBasePtah, $appLevelController);
 
     }
-    $appLevelPluginsPath = $basePath . 'Plugin';
 
-    if (!is_dir($appLevelPluginsPath)) {
-        continue;
-    }
-    $appLevelPlugins = scandir($appLevelPluginsPath);
 
-    $appLevelViewsPath = $basePath . 'View';
+    /* $appLevelViewsPath = $basePath . 'View';
 
-    if (!is_dir($appLevelViewsPath)) {
-        continue;
-    }
-    $appLevelViews = scandir($appLevelViewsPath);
+     if (!is_dir($appLevelViewsPath)) {
+         continue;
+     }
+     $appLevelViews = scandir($appLevelViewsPath);*/
 
     //app level
     /* foreach ($appLevelViews as $appLevelView) {
 
      }*/
 }
-//foreach plugin
-$data = array();
+$completeControllerData['AppLevelControllers'] = $dataAppLevel;
+
+$appLevelPluginsPath = $basePath . 'Plugin';
+$appLevelPlugins     = scandir($appLevelPluginsPath);
+
+$pluginLevelControllerData = array();
 foreach ($appLevelPlugins as $pluginId => $pluginName) {
 
     if (in_array($pluginName, $pluginLevelExcludeArray)) {
         continue;
     }
-    print_r("**********'$pluginName'************\n");
+    //print_r("**********'$pluginName'************\n");
     $pluginBasePath = $appLevelPluginsPath . '/' . $pluginName;
 
     $pluginLevelControllersBasePath = $pluginBasePath . '/Controller/';
     $pluginLevelControllers         = scandir($pluginLevelControllersBasePath);
+
 
     $pluginLevelViewsBasePath = $pluginBasePath . '/View/';
     $pluginLevelViews         = scandir($pluginLevelViewsBasePath);
@@ -77,9 +79,12 @@ foreach ($appLevelPlugins as $pluginId => $pluginName) {
         if (in_array($pluginLevelController, $exclude)) {
             continue;
         }
-        getControllerMessages($pluginLevelControllersBasePath, $pluginLevelController);
+        $dataPluginLevel                                                =
+            getControllerMessages($pluginLevelControllersBasePath, $pluginLevelController);
+        $pluginLevelControllerData[$pluginName][$pluginLevelController] = $dataPluginLevel;
 
     }
+
     foreach ($pluginLevelViews as $pluginLevelView) {
         if (in_array($pluginLevelView, $exclude)) {
             continue;
@@ -93,11 +98,12 @@ foreach ($appLevelPlugins as $pluginId => $pluginName) {
             getViewsStaticData($viewFolderPath, $view);
         }
     }
-
-
 }
-//print_r($data);
-print_r('-----------------------end---------------------');
+$completeControllerData['PluginLevelControllers'] = $pluginLevelControllerData;
+
+//echo json_encode($completeControllerData);
+//print_r($completeControllerData);
+//print_r('-----------------------end---------------------');
 
 
 function isDIR() {
@@ -105,51 +111,73 @@ function isDIR() {
 }
 
 function getControllerMessages($path, $controllerName) {
-    //    print_r("Controller = ");
-    //    print_r($controllerName . "\n");
-    //        $data[$pluginId][$key]['controller']=$pluginLevelController;
-    $fileHandle = fopen($path . '/' . $controllerName, 'r');
-
+    $fileHandle         = fopen($path . '/' . $controllerName, 'r');
+    $controllerMessages = array();
+    $functionName       = '';
     while (($buffer = fgets($fileHandle)) !== false) {
         if (preg_match('/.*function[\s]+([_a-zA-Z0-9]+)[\s]*\((.*)\)/', $buffer,
             $matches) && !preg_match('/private/', $buffer, $matches1) && !preg_match('/[\s]*\//', $buffer,
             $matches1)
         ) {
-                        print_r("\n" . $matches[1] . "\n");
-//                            $data[$pluginId][$key]['action_name']=$matches[1];
+            $functionName = $matches[1];
         }
         if (preg_match('/this->Session->setFlash+[a-z(__]*\'([a-zA-Z\s.,]*)\'/', $buffer,
             $matches2)
         ) {
-                        print_r($matches2[1] . "\n");
-//                            $data[$pluginId][$key]['messages'][]=$matches2[1];
-
+            $controllerMessages[][$functionName] = $matches2[1];
         }
     }
-//    print_r($data);
+
+    return $controllerMessages;
 }
 
 function getViewsStaticData($path, $viewName) {
-    print_r($viewName . "\n");
-    $data       = array();
+
+    //    $data             = array();
     $fileHandle = fopen($path . '/' . $viewName, 'r');
-    $newPath    = '/home/weboniselab/test.csv';
+
+    $viewPlaceHolders = array();
+//    $viewTitles       = array();
     while (($buffer = fgets($fileHandle)) !== false) {
         if (preg_match('/[\'|"]placeholder[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
-            $matches)
+            $placeHolderMatches)
         ) {
-            //                        print_r($matches);
+            if (!empty($placeHolderMatches[1]) && isset($placeHolderMatches[1])) {
+                $viewPlaceHolders[$viewName][] = $placeHolderMatches[1];
+            }
+
         }
         //      if(preg_match('/this->Html->link[(_\']*([a-z-A-Z\s]*)[\')]*/',$buffer,$matches)){
         //           print_r($matches);
         //        }
 
-        if (preg_match('/this->Html->link[(\']*[_a-zA-Z(\s$->\[\],#]+[);]/', $buffer,
-            $matches)
+        if ((preg_match('/this->Html->link[(]*[_$)(#\'a-z\s,=>-]+[.\s\'a-zA-Z0-9,)(=>_#\[\]"->]*$/', $buffer,
+            $linkMatches))
         ) {
-            $data[]=($matches[0]);
+            $data[$path][$viewName][] = ($linkMatches);
+
+        }
+        if (preg_match('/[\'|"]title[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
+            $titleMatches)
+        ) {
+            if (!empty($titleMatches[1]) && isset($titleMatches[1])) {
+                $viewTitles[$viewName][] = $titleMatches[1];
+            }
+
+        }
+        if (preg_match('/this->Form->submit[(\']*([a-zA-Z0-9\s]*)[\']*[,\sa-zA-Z0-9)(\'=>-]*/', $buffer,
+            $submitButtonMatches)
+        ) {
+//            print_r($viewName);
+            print_r($submitButtonMatches);
+            if (!empty($submitButtonMatches[1]) && isset($submitButtonMatches[1])) {
+                $viewSubmitButtonMatches[$viewName][] = $submitButtonMatches[1];
+            }
 
         }
     }
-    //print_r($data);
+//        print_r($viewSubmitButtonMatches[1]);
+    /*if (isset($data)) {
+        print_r($data);
+    }*/
 }

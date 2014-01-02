@@ -1,0 +1,225 @@
+{ "AppLevelControllers" : {
+    "AppController.php" : [ "There is no any product with this name on crucible.com",
+                                                    "Sorry, You are not authorised to use this action",
+                                                    "Sorry, You can not login to product dashbaord"
+    ],
+    "HtmlsController.php" : [  ],
+    "MemcachesController.php" : [ "Cache Flushed Successfully",
+                                  "Cache Flush error, please try after sometime"
+    ],
+    "PagesController.php" : [  ],
+    "SkyHtmlsController.php" : [  ]
+},
+    "PluginLevelControllers" : {
+        "Activities" : {
+            "ActivitiesAppController.php" : [  ],
+            "ActivitiesController.php" : [  ]
+        },
+        "Ats" : {
+            "ApisController.php" : [  ],
+            "AtsAppController.php" : [  ],
+            "CredentialsController.php" : [  ],
+            "TaleosController.php" : [  ]
+        },
+        "Crpts" : {
+            "AssessmentsController.php" : [  ],
+            "CfaCoreThemesController.php" : [ "You have added all the cultural themes available in global bank" ],
+            "CfaParametersController.php" : [ "The cultural fit assessment parameters has been saved",
+                                              "Cultural fit assessment parameters could not be saved. Please, try again."
+            ],
+            "CfaQuestionsController.php" : [ "The Cultural Themes question has been selected",
+                                             "The Cultural Themes question has been selected",
+                                             "The Cultural Themes question has been selected"
+            ],
+            "CfaScoresController.php" : [  ],
+            "CfasController.php" : [ "The cfa could not be saved. Please, try again.",
+                                     "The cfa has been saved",
+                                     "The cfa could not be saved. Please, try again.",
+                                     "You can not delete this cfa as it is already in use.",
+                                     "Action Not Allowed",
+                                     "No records found to download"
+            ],
+            "CountriesController.php" : [ "Search field does not exist." ],
+            "CrptsAppController.php" : [ "Assessment can not be edited as there are live users",
+                                         "Assessment can not be edited as there are live users"
+            ],
+            "ReportsController.php" : [ "Candidate does not exists.",
+                                        "Candidate does not exists.",
+                                        "Candidate does not exists.",
+                                        "Candidate does not exists.",
+                                        "Candidate does not exists.",
+                                        "Candidate does not exists."
+            ],
+            "RpaBehavioursController.php" : [ "The rpa behaviour has been saved",
+                                              "The rpa behaviour could not be saved. Please, try again.",
+                                              "The rpa behaviour has been saved",
+                                              "The rpa behaviour could not be saved. Please, try again.",
+                                              "Rpa behaviour deleted",
+                                              "Rpa behaviour was not deleted",
+                                              "The rpa behaviour has been saved",
+                                              "The rpa behaviour could not be saved. Please, try again."
+            ],
+            "RpaResponsesController.php" : [ "This assessment is already completed",
+                                             "Rpa response deleted",
+                                             "Rpa response was not deleted",
+                                             "This assessment is already completed"
+            ],
+            "RpaScenariosController.php" : [ "The Scenarios has been saved.",
+                                             "This assessment is already completed",
+                                             "The rpa scenario has been saved",
+                                             "The rpa scenario could not be saved. Please, try again.",
+                                             "Rpa scenario deleted",
+                                             "Rpa scenario was not deleted",
+                                             "The Scenarios has been saved."
+            ],
+            "RpasController.php" : [ "The rpa has been saved",
+                                     "The rpa could not be saved. Please, try again.",
+                                     "The rpa has been saved",
+                                     "The rpa could not be saved. Please, try again.",
+                                     "You can not delete this rpa as it is already in use.",
+                                     "Rpa deleted",
+                                     "Rpa was not deleted",
+                                     "Assessment saved successfully.",
+                                     "Assessment saved successfully.",
+                                     "RPA saved successfully."
+            ]
+        },
+        "Customisations" : {
+            "CustomisationsAppController.php" : [  ],
+            "SkysController.php" : [  ]
+        },
+        "Das" : {
+            "AssessmentsController.php" : [  ],
+            "CategoriesController.php" : [ "The da organisations product could not be saved. Please, try again.",
+                                           "Behaviours successfully selected",
+                                           "Behaviours having role scenarios are not found",
+                                           "New behaviour added successfully",
+                                           "No more behaviours found to add."
+            ],
+            "CoreThemesController.php" : [ "You can not edit this CFA as there are active users, please try again after sometime",
+                                           "Cultural themes selected",
+                                           "You have added all the cultural themes available in global bank",
+                                           "You can not edit this CFA as there are active users, please try again after sometime",
+                                           "Cultural theme deleted",
+                                           "Cultural theme was not deleted",
+                                           "Cultural themes selected",
+                                           "You have deleted all behaviours, please select them again"
+            ],
+            "CrptQuestionsController.php" : [ "The Cultural Themes question has been selected",
+                                              "You have added all the cultural themes available in global bank",
+                                              "The question has been saved",
+                                              "question deleted",
+                                              "The Cultural Themes question has been selected"
+            ],
+            "DasAppController.php" : [  ]
+        },
+        "JobRoles" : {
+            "AssessmentsController.php" : [  ],
+            "JobRoleAssessmentsController.php" : [ "The job role assessment has been saved",
+                                                   "The job role assessment could not be saved. Please, try again.",
+                                                   "The job role assessment has been saved",
+                                                   "The job role assessment could not be saved. Please, try again."
+            ],
+            "JobRolesAppController.php" : [ "You can not edit this RPA as there are active users, please try again after sometime" ],
+            "JobRolesController.php" : [ "Invalid Job role",
+                                         "Job Role created",
+                                         "The job role could not be saved. Please, try again.",
+                                         "Product is not assigned sorry",
+                                         "Invalid Job role",
+                                         "Invalid Job role",
+                                         "Can not edit further as user are invited for this job role",
+                                         "Job Role details successfully updated",
+                                         "The job role could not be saved. Please, try again.",
+                                         "Invalid Job role",
+                                         "Job role deleted successfully",
+                                         "The Behaviors has been saved.",
+                                         "The Behaviors has been saved.",
+                                         "Action Not Allowed",
+                                         "No records found to download",
+                                         "Invalid Job role",
+                                         "Job Role details successfully updated",
+                                         "The job role could not be saved. Please, try again."
+            ],
+            "RpaAssessmentsController.php" : [ "The rpa assessment has been saved",
+                                               "The rpa assessment could not be saved. Please, try again.",
+                                               "Assessment deleted",
+                                               "Assessment was not deleted",
+                                               "This assessment is already completed",
+                                               "The Behaviors has been saved.",
+                                               "The Scenarios has been saved.",
+                                               "Behaviour deleted",
+                                               "Behaviour was not deleted",
+                                               "The Behaviors has been saved.",
+                                               "There are no behaviors to choose",
+                                               "The Scenarios has been saved.",
+                                               "Assessment saved successfully."
+            ],
+            "UsersController.php" : [ "File not supported, please upload jpeg,jpg,png format files",
+                                      "Profile successfully updated",
+                                      "Profile successfully updated"
+            ]
+        },
+        "Levels" : {
+            "LevelsAppController.php" : [  ]
+        },
+        "Organisations" : {
+            "OrganisationsAppController.php" : [  ],
+            "ProductBehaviorParametersController.php" : [ "The cultural fit assessment parameters has been saved",
+                                                          "The cultural fit assessment parameters could not be saved. Please, try again.",
+                                                          "The cultural fit assessment parameters has been saved",
+                                                          "Cultural fit assessment parameters could not be saved. Please, try again.",
+                                                          "Cultural fit assessment parameters deleted",
+                                                          "Cultural fit assessment parameters was not deleted"
+            ]
+        },
+        "Products" : {
+            "ProductThemesController.php" : [  ],
+            "ProductsAppController.php" : [  ],
+            "ProductsUsersController.php" : [ "The products user has been saved",
+                                              "The products user could not be saved. Please, try again.",
+                                              "The products user has been saved",
+                                              "The products user could not be saved. Please, try again.",
+                                              "Products user deleted",
+                                              "Products user was not deleted",
+                                              "Invalid Key Contact, please try again.",
+                                              "Search field does not exist.",
+                                              "Action Not Allowed",
+                                              "Action Not Allowed",
+                                              "Action Not Allowed"
+            ],
+            "SupportsController.php" : [ "Something went wrong, please try saving again",
+                                         "Support data saved successfully",
+                                         "Not able to save support data, please try saving again"
+            ]
+        },
+        "Users" : {
+            "CandidatesController.php" : [ "The candidate has been saved",
+                                                   "The candidate could not be saved. Please, try again.",
+                                                   "Candidate deleted",
+                                                   "Candidate was not deleted",
+                                                   "Mail sent successfully"
+        ],
+            "UsersAppController.php" : [  ],
+            "UsersController.php" : [ "The username or password you entered is incorrect.",
+                                      "The user has been saved",
+                                      "The user could not be saved. Please, try again.",
+                                      "The user has been saved",
+                                      "The user could not be saved. Please, try again.",
+                                      "User deleted successfully",
+                                      "User was not deleted",
+                                      "Verification code is incorrect, please try again",
+                                      "You have successfully accepted the invitation",
+                                      "Verification code is incorrect, please try again",
+                                      "Password set successfully",
+                                      "Verification code is incorrect, please try again",
+                                      "Verification code is incorrect, please try again",
+                                      "Your account is deactivated by administrator, please contact administrator",
+                                      "We have sent you an email with instructions for changing your password.",
+                                      "Email address is not exists",
+                                      "Invalid old password. Please enter valid old password",
+                                      "Your password has been set. Now you can login to the system",
+                                      "Your verification link is incorrect ,Please try again"
+            ]
+        }
+    }
+}
