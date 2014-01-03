@@ -152,23 +152,21 @@ function getViewsStaticData($path, $viewName) {
 
     $fileHandle = fopen($path . '/' . $viewName, 'r');
     $viewPlaceHolders = array();
+    $alertMessagesArray=array();
     while (($buffer = fgets($fileHandle)) !== false) {
         if (preg_match('/[\'|"]placeholder[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
             $placeHolderMatches)
         ) {
             if (!empty($placeHolderMatches[1]) && isset($placeHolderMatches[1])) {
-                $viewPlaceHolders[$viewName][] = $placeHolderMatches[1];
+                $viewPlaceHolders[$viewName]['place_holders'][] = $placeHolderMatches[1];
             }
 
         }
-        //      if(preg_match('/this->Html->link[(_\']*([a-z-A-Z\s]*)[\')]*/',$buffer,$matches)){
-        //           print_r($matches);
-        //        }
 
         if ((preg_match('/this->Html->link[(].*/', $buffer,
             $linkMatches))
         ) {
-            $data[$path][$viewName][] = ($linkMatches[0]);
+            $data[$path][$viewName]['link'][] = ($linkMatches[0]);
 
         }
 
@@ -176,7 +174,7 @@ function getViewsStaticData($path, $viewName) {
             $titleMatches)
         ) {
             if (!empty($titleMatches[1]) && isset($titleMatches[1])) {
-                $viewTitles[$viewName][] = $titleMatches[1];
+                $viewTitles[$viewName]['title'][] = $titleMatches[1];
             }
 
         }
@@ -184,7 +182,16 @@ function getViewsStaticData($path, $viewName) {
             $submitButtonMatches)
         ) {
             if (!empty($submitButtonMatches[1]) && isset($submitButtonMatches[1])) {
-                $viewSubmitButtonMatches[$viewName][] = $submitButtonMatches[1];
+                $viewSubmitButtonMatches[$viewName]['submit'][] = $submitButtonMatches[1];
+            }
+
+        }
+
+        if (preg_match('/alert\((.+?)\)/', $buffer,
+            $alertMessagesMatches)
+        ) {
+            if (!empty($alertMessagesMatches[1]) && isset($alertMessagesMatches[1])) {
+                $alertMessagesArray[$viewName]['alert_messages'][] = $alertMessagesMatches[1];
             }
 
         }
@@ -195,14 +202,19 @@ function getViewsStaticData($path, $viewName) {
     libxml_use_internal_errors(true);
     $doc->loadHTML($myhtml);
     $tags = $doc->getElementsByTagName('label');
+        $options = $doc->getElementsByTagName('select');
 
     $tagArray = array();
     foreach ($tags as $tag) {
-        $tagArray[$viewName][] = $tag->nodeValue;
+        $tagArray[$viewName]['labels'][] = $tag->nodeValue;
     }
 
-    if (isset($tagArray) && !empty($tagArray)) {
-        print_r($tagArray);
-    }
+        $optionsArray=array();
+        foreach($options as $option){
+            $optionsArray[$viewName]['options'][]=$option->nodeValue;
+        }
+        if(isset($alertMessagesArray)&& !empty($alertMessagesArray)){
+            print_r($alertMessagesArray);
+        }
     }
 }
