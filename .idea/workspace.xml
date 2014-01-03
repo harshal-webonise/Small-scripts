@@ -23,7 +23,16 @@
       <file leaf-file-name="parse.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="19" selection-start="5950" selection-end="5950" vertical-scroll-proportion="0.78222996">
+            <state line="194" column="4" selection-start="6130" selection-end="6130" vertical-scroll-proportion="0.61048156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dom_c.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/dom_c.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="813" column="20" selection-start="25193" selection-end="25193" vertical-scroll-proportion="-10.125">
               <folding />
             </state>
           </provider>
@@ -57,10 +66,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1599" />
-    <option name="y" value="39" />
-    <option name="width" value="1026" />
-    <option name="height" value="773" />
+    <option name="x" value="-1" />
+    <option name="y" value="-4" />
+    <option name="width" value="1602" />
+    <option name="height" value="905" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -113,7 +122,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1599" y="39" width="1026" height="773" extended-state="6" />
+    <frame x="-1" y="-4" width="1602" height="905" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -123,7 +132,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25460124" sideWeight="0.6025641" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -191,13 +200,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="49" selection-start="13334" selection-end="13334" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="19" selection-start="5008" selection-end="5008" vertical-scroll-proportion="0.0">
@@ -286,9 +288,16 @@
         <state line="951" column="20" selection-start="28524" selection-end="28524" vertical-scroll-proportion="0.8966132" />
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/dom_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="813" column="20" selection-start="25193" selection-end="25193" vertical-scroll-proportion="-10.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="19" selection-start="5950" selection-end="5950" vertical-scroll-proportion="0.78222996">
+        <state line="194" column="4" selection-start="6130" selection-end="6130" vertical-scroll-proportion="0.61048156">
           <folding />
         </state>
       </provider>

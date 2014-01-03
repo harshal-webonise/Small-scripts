@@ -18,6 +18,22 @@ $appLevelControllers = array();
 
 $completeControllerData = array();
 $dataAppLevel           = array();
+
+$myhtml = file_get_contents('/home/weboniselab/projects/apps2013/php/Crucible-CRT/app/Plugin/Crpts/View/Cfas/add.ctp');
+
+$doc = new DOMDocument();
+$doc->loadHTML($myhtml);
+
+$tags = $doc->getElementsByTagName('label');
+
+$tagArray = array();
+foreach ($tags as $tag) {
+    $tagArray[] = $tag->nodeValue;
+}
+print_r($tagArray);
+
+
+
 foreach ($appLevelFolders as $appLevelFolder) {
 
     if (in_array($appLevelFolder, $appLevelExcludeArray)) {
@@ -96,6 +112,7 @@ foreach ($appLevelPlugins as $pluginId => $pluginName) {
                 continue;
             }
             getViewsStaticData($viewFolderPath, $view);
+
         }
     }
 }
@@ -133,11 +150,8 @@ function getControllerMessages($path, $controllerName) {
 
 function getViewsStaticData($path, $viewName) {
 
-    //    $data             = array();
     $fileHandle = fopen($path . '/' . $viewName, 'r');
-
     $viewPlaceHolders = array();
-//    $viewTitles       = array();
     while (($buffer = fgets($fileHandle)) !== false) {
         if (preg_match('/[\'|"]placeholder[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
             $placeHolderMatches)
@@ -151,12 +165,13 @@ function getViewsStaticData($path, $viewName) {
         //           print_r($matches);
         //        }
 
-        if ((preg_match('/this->Html->link[(]*[_$)(#\'a-z\s,=>-]+[.\s\'a-zA-Z0-9,)(=>_#\[\]"->]*$/', $buffer,
+        if ((preg_match('/this->Html->link[(].*/', $buffer,
             $linkMatches))
         ) {
-            $data[$path][$viewName][] = ($linkMatches);
+            $data[$path][$viewName][] = ($linkMatches[0]);
 
         }
+
         if (preg_match('/[\'|"]title[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
             $titleMatches)
         ) {
@@ -168,16 +183,26 @@ function getViewsStaticData($path, $viewName) {
         if (preg_match('/this->Form->submit[(\']*([a-zA-Z0-9\s]*)[\']*[,\sa-zA-Z0-9)(\'=>-]*/', $buffer,
             $submitButtonMatches)
         ) {
-//            print_r($viewName);
-            print_r($submitButtonMatches);
             if (!empty($submitButtonMatches[1]) && isset($submitButtonMatches[1])) {
                 $viewSubmitButtonMatches[$viewName][] = $submitButtonMatches[1];
             }
 
         }
     }
-//        print_r($viewSubmitButtonMatches[1]);
-    /*if (isset($data)) {
-        print_r($data);
-    }*/
+    $myhtml = file_get_contents($path . '/' . $viewName);
+    $doc = new DOMDocument();
+    if(!empty($myhtml)){
+    libxml_use_internal_errors(true);
+    $doc->loadHTML($myhtml);
+    $tags = $doc->getElementsByTagName('label');
+
+    $tagArray = array();
+    foreach ($tags as $tag) {
+        $tagArray[$viewName][] = $tag->nodeValue;
+    }
+
+    if (isset($tagArray) && !empty($tagArray)) {
+        print_r($tagArray);
+    }
+    }
 }
