@@ -111,11 +111,13 @@ foreach ($appLevelPlugins as $pluginId => $pluginName) {
             if (in_array($view, $exclude)) {
                 continue;
             }
-            getViewsStaticData($viewFolderPath, $view);
+            $viewContent=getViewsStaticData($viewFolderPath, $view);
+            $viewsContents[$pluginName][$pluginLevelView]=$viewContent;
 
         }
     }
 }
+print_r($viewsContents);die;
 $completeControllerData['PluginLevelControllers'] = $pluginLevelControllerData;
 
 //echo json_encode($completeControllerData);
@@ -153,12 +155,14 @@ function getViewsStaticData($path, $viewName) {
     $fileHandle = fopen($path . '/' . $viewName, 'r');
     $viewPlaceHolders = array();
     $alertMessagesArray=array();
+    $result=array();
     while (($buffer = fgets($fileHandle)) !== false) {
         if (preg_match('/[\'|"]placeholder[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
             $placeHolderMatches)
         ) {
             if (!empty($placeHolderMatches[1]) && isset($placeHolderMatches[1])) {
                 $viewPlaceHolders[$viewName]['place_holders'][] = $placeHolderMatches[1];
+                $result[$path][$viewName]['place_holders'][] = $placeHolderMatches[1];
             }
 
         }
@@ -167,6 +171,7 @@ function getViewsStaticData($path, $viewName) {
             $linkMatches))
         ) {
             $data[$path][$viewName]['link'][] = ($linkMatches[0]);
+            $result[$path][$viewName]['link'][] = ($linkMatches[0]);
 
         }
 
@@ -175,6 +180,7 @@ function getViewsStaticData($path, $viewName) {
         ) {
             if (!empty($titleMatches[1]) && isset($titleMatches[1])) {
                 $viewTitles[$viewName]['title'][] = $titleMatches[1];
+                $result[$path][$viewName]['title'][] = $titleMatches[1];
             }
 
         }
@@ -183,6 +189,7 @@ function getViewsStaticData($path, $viewName) {
         ) {
             if (!empty($submitButtonMatches[1]) && isset($submitButtonMatches[1])) {
                 $viewSubmitButtonMatches[$viewName]['submit'][] = $submitButtonMatches[1];
+                $result[$path][$viewName]['submit'][] = $submitButtonMatches[1];
             }
 
         }
@@ -192,6 +199,7 @@ function getViewsStaticData($path, $viewName) {
         ) {
             if (!empty($alertMessagesMatches[1]) && isset($alertMessagesMatches[1])) {
                 $alertMessagesArray[$viewName]['alert_messages'][] = $alertMessagesMatches[1];
+                $result[$path][$viewName]['alert_messages'][] = $alertMessagesMatches[1];
             }
 
         }
@@ -206,15 +214,17 @@ function getViewsStaticData($path, $viewName) {
 
     $tagArray = array();
     foreach ($tags as $tag) {
-        $tagArray[$viewName]['labels'][] = $tag->nodeValue;
+        $tagArray[$path][$viewName]['labels'][] = $tag->nodeValue;
+        $result[$path][$viewName]['labels'][] = $tag->nodeValue;
     }
 
         $optionsArray=array();
         foreach($options as $option){
             $optionsArray[$viewName]['options'][]=$option->nodeValue;
+            $result[$path][$viewName]['options'][]=$option->nodeValue;
         }
-        if(isset($alertMessagesArray)&& !empty($alertMessagesArray)){
-            print_r($alertMessagesArray);
-        }
+        /*if(isset($result)&& !empty($result)){
+            print_r($result);
+        }*/
     }
 }

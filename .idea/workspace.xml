@@ -23,25 +23,7 @@
       <file leaf-file-name="parse.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="62" selection-start="4491" selection-end="4491" vertical-scroll-proportion="0.063739374">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dom_c.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/dom_c.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="813" column="20" selection-start="25193" selection-end="25193" vertical-scroll-proportion="-10.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="49" selection-start="13334" selection-end="13334" vertical-scroll-proportion="0.0">
+            <state line="219" column="0" selection-start="7254" selection-end="7254" vertical-scroll-proportion="0.6388102">
               <folding />
             </state>
           </provider>
@@ -103,8 +85,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="coverage" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Crucible-CRT" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -290,14 +272,14 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/dom_c.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="813" column="20" selection-start="25193" selection-end="25193" vertical-scroll-proportion="-10.125">
+        <state line="813" column="20" selection-start="25193" selection-end="25193" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="62" selection-start="4491" selection-end="4491" vertical-scroll-proportion="0.063739374">
+        <state line="219" column="0" selection-start="7254" selection-end="7254" vertical-scroll-proportion="0.6388102">
           <folding />
         </state>
       </provider>
