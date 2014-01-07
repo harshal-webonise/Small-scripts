@@ -19,20 +19,6 @@ $appLevelControllers = array();
 $completeControllerData = array();
 $dataAppLevel           = array();
 
-$myhtml = file_get_contents('/home/weboniselab/projects/apps2013/php/Crucible-CRT/app/Plugin/Crpts/View/Cfas/add.ctp');
-
-$doc = new DOMDocument();
-$doc->loadHTML($myhtml);
-
-$tags = $doc->getElementsByTagName('label');
-
-$tagArray = array();
-foreach ($tags as $tag) {
-    $tagArray[] = $tag->nodeValue;
-}
-print_r($tagArray);
-
-
 
 foreach ($appLevelFolders as $appLevelFolder) {
 
@@ -89,7 +75,7 @@ foreach ($appLevelPlugins as $pluginId => $pluginName) {
     $pluginLevelViews         = scandir($pluginLevelViewsBasePath);
 
     // for each controller at app level
-
+$viewResultString='';
     foreach ($pluginLevelControllers as $key => $pluginLevelController) {
 
         if (in_array($pluginLevelController, $exclude)) {
@@ -105,29 +91,27 @@ foreach ($appLevelPlugins as $pluginId => $pluginName) {
         if (in_array($pluginLevelView, $exclude)) {
             continue;
         }
-        $viewFolderPath = $pluginLevelViewsBasePath . '/' . $pluginLevelView;
+        $viewFolderPath = $pluginLevelViewsBasePath . $pluginLevelView;
         $views          = scandir($viewFolderPath);
         foreach ($views as $view) {
             if (in_array($view, $exclude)) {
                 continue;
             }
             $viewContent=getViewsStaticData($viewFolderPath, $view);
-            $viewsContents[$pluginName][$pluginLevelView]=$viewContent;
 
+            $viewsContents[$pluginName][$pluginLevelView][]=$viewContent;
+            $viewResultString.=$pluginName.'$$$'.$pluginLevelView.'$$$'.$viewContent."\n";
         }
     }
 }
-print_r($viewsContents);die;
+print_r($viewResultString);die;
 $completeControllerData['PluginLevelControllers'] = $pluginLevelControllerData;
+print_r(json_encode($viewsContents));
+file_put_contents("/home/weboniselab/projects/apps2013/php/testApp/test.smallapp.com/view_data.json",json_encode($viewsContents));
+file_put_contents("/home/weboniselab/projects/apps2013/php/testApp/test.smallapp.com/controller_data.json",json_encode($completeControllerData));
 
-//echo json_encode($completeControllerData);
-//print_r($completeControllerData);
-//print_r('-----------------------end---------------------');
+print_r('-----------------------end---------------------');
 
-
-function isDIR() {
-
-}
 
 function getControllerMessages($path, $controllerName) {
     $fileHandle         = fopen($path . '/' . $controllerName, 'r');
@@ -156,13 +140,15 @@ function getViewsStaticData($path, $viewName) {
     $viewPlaceHolders = array();
     $alertMessagesArray=array();
     $result=array();
+    $resultString='';
     while (($buffer = fgets($fileHandle)) !== false) {
-        if (preg_match('/[\'|"]placeholder[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
+        if (preg_match('/[\'|"]placeholder[\'|"]+[\s=>\']*([a-zA-Z\s-?]*)[\'|"]/', $buffer,
             $placeHolderMatches)
         ) {
             if (!empty($placeHolderMatches[1]) && isset($placeHolderMatches[1])) {
                 $viewPlaceHolders[$viewName]['place_holders'][] = $placeHolderMatches[1];
                 $result[$path][$viewName]['place_holders'][] = $placeHolderMatches[1];
+                $resultString.=$path.'$$$'.$viewName.'$$$'.'place_holder'.'$$$'.$placeHolderMatches[1]."\n";
             }
 
         }
@@ -172,6 +158,7 @@ function getViewsStaticData($path, $viewName) {
         ) {
             $data[$path][$viewName]['link'][] = ($linkMatches[0]);
             $result[$path][$viewName]['link'][] = ($linkMatches[0]);
+//            $resultString.=$path.'$$$'.$viewName.'$$$'.'link'.'$$$'.$linkMatches[0]."\n";
 
         }
 
@@ -181,6 +168,7 @@ function getViewsStaticData($path, $viewName) {
             if (!empty($titleMatches[1]) && isset($titleMatches[1])) {
                 $viewTitles[$viewName]['title'][] = $titleMatches[1];
                 $result[$path][$viewName]['title'][] = $titleMatches[1];
+                $resultString.=$path.'$$$'.$viewName.'$$$'.'title'.'$$$'.$titleMatches[1]."\n";
             }
 
         }
@@ -190,6 +178,7 @@ function getViewsStaticData($path, $viewName) {
             if (!empty($submitButtonMatches[1]) && isset($submitButtonMatches[1])) {
                 $viewSubmitButtonMatches[$viewName]['submit'][] = $submitButtonMatches[1];
                 $result[$path][$viewName]['submit'][] = $submitButtonMatches[1];
+                $resultString.=$path.'$$$'.$viewName.'$$$'.'Button'.'$$$'.$submitButtonMatches[1]."\n";
             }
 
         }
@@ -200,6 +189,7 @@ function getViewsStaticData($path, $viewName) {
             if (!empty($alertMessagesMatches[1]) && isset($alertMessagesMatches[1])) {
                 $alertMessagesArray[$viewName]['alert_messages'][] = $alertMessagesMatches[1];
                 $result[$path][$viewName]['alert_messages'][] = $alertMessagesMatches[1];
+                $resultString.=$path.'$$$'.$viewName.'$$$'.'alert_message'.'$$$'.$alertMessagesMatches[1]."\n";
             }
 
         }
@@ -216,15 +206,18 @@ function getViewsStaticData($path, $viewName) {
     foreach ($tags as $tag) {
         $tagArray[$path][$viewName]['labels'][] = $tag->nodeValue;
         $result[$path][$viewName]['labels'][] = $tag->nodeValue;
+//        $resultString.=$path.'$$$'.$viewName.'$$$'.'label'.'$$$'.$tag->nodeValue."\n";
     }
 
         $optionsArray=array();
         foreach($options as $option){
             $optionsArray[$viewName]['options'][]=$option->nodeValue;
             $result[$path][$viewName]['options'][]=$option->nodeValue;
+//            $resultString.=$path.'$$$'.$viewName.'$$$'.'options'.'$$$'.$tag->nodeValue."\n";
         }
         /*if(isset($result)&& !empty($result)){
-            print_r($result);
+            print_r($result);die;
         }*/
     }
+    return $resultString;
 }

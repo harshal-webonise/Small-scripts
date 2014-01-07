@@ -1,0 +1,2158 @@
+{"Activities":{
+    "Activities":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Activities\/View\/Activities":{
+                "search.ctp":{
+                    "link":[
+                        "this->Html->link('View All',array('plugin' => 'activities','controller' => 'activities','action' => 'view_all_search_result',$name"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Activities\/View\/Activities":{
+                "view_all.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'products','controller' => 'products_users','action' => 'dashboard'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back"]
+                }
+            }
+        }
+    ],
+    "Elements":[
+        [],
+        [],
+        []
+    ],
+    "Helper":[
+        []
+    ]
+},
+    "Ats":{
+        "Apis":[
+            {
+                "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Ats\/View\/Apis":{
+                    "assessment_report_link_request_console.ctp":{
+                        "submit":["Submit"]
+                    }
+                }
+            },
+            {
+                "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Ats\/View\/Apis":{
+                    "assessment_request_console.ctp":{
+                        "submit":["Submit"]
+                    }
+                }
+            },
+            {
+                "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Ats\/View\/Apis":{
+                    "assessment_status_request_console.ctp":{
+                        "submit":["Submit"]
+                    }
+                }
+            },
+            {
+                "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Ats\/View\/Apis":{
+                    "certificate_number_lookup_console.ctp":{
+                        "submit":["Submit"]
+                    }
+                }
+            }
+        ],
+        "Helper":[
+            []
+        ],
+        "Taleos":[
+            {
+                "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Ats\/View\/Taleos":{
+                    "aor_console.ctp":{
+                        "submit":["Submit"]
+                    }
+                }
+            },
+            {
+                "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Ats\/View\/Taleos":{
+                    "asr_console.ctp":{
+                        "submit":["Submit"]
+                    }
+                }
+            }
+        ]
+    }, "Crpts":{
+    "Assessments":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Assessments":{
+                "cancelled.ctp":{
+                    "link":[
+                        "this->Html->link(__('continue'),$redirectionUrl,array('class' => 'btn btn-large','title' => 'continue'));"
+                    ],
+                    "title":["continue"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Assessments":{
+                "error.ctp":{
+                    "link":[
+                        "this->Html->link(__('Back'),$redirectCallBackURL,array('class' => 'btnBlue','title' => 'continue'));"
+                    ],
+                    "title":["continue"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Assessments":{
+                "maintenance.ctp":{
+                    "link":[
+                        "this->Html->link(__('continue'),$redirectionUrl,array('class' => 'btn btn-large','title' => 'continue'));"
+                    ],
+                    "title":["continue"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Assessments":{
+                "retake.ctp":{
+                    "link":[
+                        "this->Html->link(__('continue'),$redirectionUrl,array('class' => 'btnBlue','title' => 'continue'));"
+                    ],
+                    "title":["continue"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Assessments":{
+                "unavailable.ctp":{
+                    "link":[
+                        "this->Html->link(__('continue'),$redirectionUrl,array('class' => 'btn btn-large','title' => 'continue'));"
+                    ],
+                    "title":["continue"]
+                }
+            }
+        }
+    ],
+    "CfaCoreThemes":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaCoreThemes":{
+                "add.ctp":{
+                    "place_holders":["Alias Name"],
+                    "title":["Done"],
+                    "submit":["Next"],
+                    "labels":[
+                        "Form->checkbox('CfaCoreTheme.' . $key . '.core_theme_id',array('value' => $coreTheme['CoreTheme']['id'],'class' => 'CoreThemeCheckbox','data-id' => $coreTheme['CoreTheme']['id'],'id' => 'CoreThemeCheckbox_' . $coreTheme['CoreTheme']['id'],'type' => 'checkbox','hiddenField' => false));        echo $this->Form->hidden('CfaCoreTheme.' . $key . '.name',array('value' => $coreTheme['CoreTheme']['name']));echo $this->Form->hidden('CfaCoreTheme.' . $key . '.cfa_id',array('value' => $cfaId));        ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaCoreThemes":{
+                "edit.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','Add more themes',array('class' => 'addSmallIcon')),'#',array('title' => 'Add Cultural Assessment','class' => 'btn btnThin',));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage2 fancybox_link'));"
+                    ],
+                    "title":["Add Cultural Assessment", "Done With Editing"],
+                    "place_holders":["user alias"],
+                    "submit":["Done With Editing"],
+                    "alert_messages":["'Please select ' + noOfQuestionsPerTheme + ' questions to continue'",
+                                      "\"Maximum limit reached\"", "'Please correct score error'",
+                                      "'Please correct score error'"],
+                    "labels":[
+                        "Form->hidden('CfaCoreTheme.id',array('value' => $this->request->data['CfaCoreTheme']['id']));\n$checked = 'false';echo $this->Form->checkbox('CfaCoreTheme.is_critical',array('checked' => $this->request->data['CfaCoreTheme']['is_critical'],'id' => $this->request->data['CfaCoreTheme']['id'],));?> Critical theme\n                ",
+                        "",
+                        "    Form->checkbox(\"CfaCtQuestion.\" . $key . \".is_reverse\",array('checked' => $reverseChecked,'id' => 'reverse' . $key,'div' => false));    ?>    Reverse the Scale",
+                        "1. Low description", "2. High description",
+                        "1. If candidate falls in the area Fail (less than most suited)",
+                        "2. If candidate falls in the area Acceptable (less than most suited)",
+                        "3. If candidate falls in the area Most suited",
+                        "4. If candidate falls in the area Acceptable (greater than most suited)",
+                        "5. If candidate falls in the area Fail (greater than most suited)",
+                        "Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>" +
+"Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','style' => 'margin:5px 0 0 0','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaCoreThemes":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Add new Theme',true),array('plugin' => 'crpts','controller' => 'cfa_core_themes','action' => 'add',$hash),array('class' => 'btn btnThin checkCandidateStatus','title' => 'Add new theme','escape' => false));",
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => '')) . 'Edit Assessment',true),array('plugin' => 'crpts','controller' => 'cfas','action' => 'edit_cfa',$hash),array('class' => 'btn btnThin checkCandidateStatus','title' => 'Edit Assessment','escape' => false));"
+                    ],
+                    "title":["Add new theme", "Edit Assessment"],
+                    "alert_messages":[
+                        "'You can not edit this CFA as there are active users, please try again after sometime'"],
+                    "labels":[" Critical theme        "]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaCoreThemes":{
+                "select.ctp":{
+                    "place_holders":["Alias Name"],
+                    "title":["Done"],
+                    "submit":["Next"],
+                    "labels":[
+                        "Form->checkbox('CfaCoreTheme.' . $key . '.core_theme_id',array('value' => $coreTheme['CoreTheme']['id'],'class' => 'CoreThemeCheckbox','data-id' => $coreTheme['CoreTheme']['id'],'id' => 'CoreThemeCheckbox_' . $coreTheme['CoreTheme']['id'],'type' => 'checkbox','hiddenField' => false));        echo $this->Form->hidden('CfaCoreTheme.' . $key . '.name',array('value' => $coreTheme['CoreTheme']['name']));echo $this->Form->hidden('CfaCoreTheme.' . $key . '.cfa_id',array('value' => $cfaId));        ?>        "
+                    ]
+                }
+            }
+        }
+    ],
+    "CfaParameters":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaParameters":{
+                "add.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "alert_messages":[
+                        "\"You can't select these response and question count, as scale can't be formed based on that\""
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaParameters":{
+                "edit.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "alert_messages":[
+                        "\"You can't select these response and question count, as scale can't be formed based on that\""
+                    ]
+                }
+            }
+        }
+    ],
+    "CfaQuestions":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaQuestions":{
+                "add.ctp":{
+                    "place_holders":["Alias Name"],
+                    "link":[
+                        "this->Html->link(__('Reverse Scores'),'javascript:void(0);',array('title' => 'Click here to reverse the score','class' => 'btn reverseScore','div' => false));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage3  fancybox_link'));"
+                    ],
+                    "title":["Click here to reverse the score"],
+                    "submit":["Set Score", "Set report content", "Save ", "Save "],
+                    "alert_messages":["\"Maximum limit reached\"",
+                                      "'Select ' + noOfQuestionsPerTheme + ' Questions for each theme'",
+                                      "'since this is a critical theme, there should be at least one bucket either in acceptable or most suited section'",
+                                      "'Please Correct the scoring error'"],
+                    "labels":[
+                        "Form->checkbox('CfaCoreTheme.is_critical',array('id' => $key,'div' => false,'class' => 'isCritical','data-id' => $cfaCoreTheme['CfaCoreTheme']['id']));\n\necho $this->Form->hidden('CfaCoreTheme.id',array('value' => $cfaCoreTheme['CfaCoreTheme']['id']),array('class' => 'ctOrgProductId'));\necho $this->Form->hidden('CfaCoreTheme.min_pass_score',array('value' => '','id' => 'minPassScore'));\necho $this->Form->hidden('CfaCoreTheme.max_pass_score',array('value' => '','id' => 'maxPassScore'));\n\n?>Critical theme\n                ",
+                        "    ",
+                        "            Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>        Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaQuestions":{
+                "continue_cfa.ctp":{
+                    "place_holders":["Alias Name"],
+                    "link":[
+                        "this->Html->link(__('Reverse Scores'),'javascript:void(0);',array('title' => 'Click here to reverse the score','class' => 'btn reverseScore','div' => false));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage3  fancybox_link'));"
+                    ],
+                    "title":["Click here to reverse the score"],
+                    "submit":["Set Score", "Set report content", "Save "],
+                    "alert_messages":["\"Maximum limit reached\"",
+                                      "'Select ' + noOfQuestionsPerTheme + ' Questions for each theme'",
+                                      "'since this is a critical theme, there should be at least one bucket either in acceptable or most suited section'",
+                                      "'Please Correct the scoring error'"],
+                    "labels":[
+                        "    Form->checkbox('CfaCoreTheme.is_critical',array('id' => 'critical','div' => false,'class' => 'isCritical','data-id' => $coreTheme['cfa_core_theme_id'],'checked' => $coreTheme['is_critical']));\necho $this->Form->hidden('CfaCoreTheme.id',array('value' => $coreTheme['cfa_core_theme_id']),array('class' => 'ctOrgProductId'));echo $this->Form->hidden('CfaCoreTheme.min_pass_score',array('value' => '','id' => 'minPassScore'));echo $this->Form->hidden('CfaCoreTheme.max_pass_score',array('value' => '','id' => 'maxPassScore'));\n?>    Critical theme",
+                        "        ",
+                        "            Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>        Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaQuestions":{
+                "edit.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','Add more themes',array('class' => 'addSmallIcon')),'#',array('title' => 'Add Cultural Assessment','class' => 'btn btnThin',));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage2 fancybox_link'));"
+                    ],
+                    "title":["Add Cultural Assessment", "Done With Editing"],
+                    "place_holders":["user alias"],
+                    "submit":["Edit report content", "Done With Editing"],
+                    "alert_messages":["'Please select ' + noOfQuestionsPerTheme + ' questions to continue'",
+                                      "'since this is a critical theme, there should be at least one bucket either in acceptable or most suited section'",
+                                      "\"Maximum limit reached\"", "'Please correct score error'"],
+                    "labels":[
+                        "Form->hidden('CfaCoreTheme.id',array('value' => $this->request->data['CfaCoreTheme']['id']));\n$checked = 'false';echo $this->Form->checkbox('CfaCoreTheme.is_critical',array('checked' => $this->request->data['CfaCoreTheme']['is_critical'],'id' => $this->request->data['CfaCoreTheme']['id'],'class' => 'isCritical'));?> Critical theme\n                ",
+                        "",
+                        "    Form->checkbox(\"CfaCtQuestion.\" . $key . \".is_reverse\",array('checked' => $reverseChecked,'id' => 'reverse' . $key,'div' => false));    ?>    Reverse the Scale",
+                        "    Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','style' => 'margin:5px 0 0 0','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaQuestions":{
+                "get_question_responses.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaQuestions":{
+                "select.ctp":{
+                    "place_holders":["Alias Name"],
+                    "link":[
+                        "this->Html->link(__('Reverse Scores'),'javascript:void(0);',array('title' => 'Click here to reverse the score','class' => 'btn reverseScore','div' => false));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage3  fancybox_link'));"
+                    ],
+                    "title":["Click here to reverse the score"],
+                    "submit":["Set Score", "Set report content", "Save "],
+                    "alert_messages":["\"Maximum limit reached\"",
+                                      "'Select ' + noOfQuestionsPerTheme + ' Questions for each theme'",
+                                      "'since this is a critical theme, there should be at least one bucket either in acceptable or most suited section'",
+                                      "'Please Correct the scoring error'"],
+                    "labels":[
+                        "    Form->checkbox('CfaCoreTheme.is_critical',array('id' => 'critical','div' => false,'class' => 'isCritical','data-id' => $coreTheme['cfa_core_theme_id'],'checked' => $coreTheme['is_critical']));\necho $this->Form->hidden('CfaCoreTheme.id',array('value' => $coreTheme['cfa_core_theme_id']),array('class' => 'ctOrgProductId'));echo $this->Form->hidden('CfaCoreTheme.min_pass_score',array('value' => '','id' => 'minPassScore'));echo $this->Form->hidden('CfaCoreTheme.max_pass_score',array('value' => '','id' => 'maxPassScore'));\n?>    Critical theme",
+                        "        ",
+                        "            Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>        Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        }
+    ],
+    "CfaScores":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaScores":{
+                "add.ctp":{
+                    "title":["Done"],
+                    "submit":["Done"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaScores":{
+                "get_cfa_slider_data.ctp":{
+                    "title":["Done"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/CfaScores":{
+                "update.ctp":{
+                    "title":["Done"],
+                    "submit":["Done"]
+                }
+            }
+        }
+    ],
+    "Cfas":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "add.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'crpts','controller' => 'cfas','action' => 'index'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back", "Save and Move to Next Step"],
+                    "place_holders":["Button title", "Button title"],
+                    "labels":["CFA Title *", "Retake Days *", "Button Title(Success) *", "Redirect URL(Success)*",
+                              "Button Title(Fail)*", "Redirect URL(Fail) *",
+                              "Form->checkbox('questions_per_page',array('id' => 'questions_per_page','div' => false,));?>Choose five questions per page",
+                              "Form->checkbox('is_anonymous_candidate_allowed',array('id' => 'is_anonymous_candidate_allowed','div' => false,));?>Allow Anonymous Candidates ",
+                              "Form->checkbox('can_tab_be_closed',array('id' => 'can_tab_be_closed','div' => false,));?>Close the browser tab on clicking the button after assessment is completed",
+                              "\nForm->checkbox('can_show_country_list',array('id' => 'can_show_country_list','div' => false,));\n?>\nShow country list to a candidate\n"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "core_themes.ctp":{
+                    "place_holders":["Alias Name"],
+                    "title":["Done"],
+                    "submit":["Next"],
+                    "labels":[
+                        "Form->checkbox('CfaCoreTheme.' . $key . '.core_theme_id',array('value' => $coreTheme['CoreTheme']['id'],'class' => 'CoreThemeCheckbox','data-id' => $coreTheme['CoreTheme']['id'],'id' => 'CoreThemeCheckbox_' . $coreTheme['CoreTheme']['id'],'type' => 'checkbox','hiddenField' => false));        echo $this->Form->hidden('CfaCoreTheme.' . $key . '.name',array('value' => $coreTheme['CoreTheme']['name']));echo $this->Form->hidden('CfaCoreTheme.' . $key . '.cfa_id',array('value' => $cfaId));        ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "edit.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'crpts','controller' => 'cfas','action' => 'index'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back", "Save"],
+                    "place_holders":["Button title", "Button title"],
+                    "labels":["CFA Title *", "Retake Days *", "Button Title(Success) *", "Redirect URL(Success) *",
+                              "Button Title(Fail)*", "Redirect URL(Fail) *",
+                              "\n                Form->checkbox('questions_per_page',array('id' => 'questions_per_page','div' => false,));\n                ?>\n                Choose five questions per page\n            ",
+                              "\n                Form->checkbox('is_anonymous_candidate_allowed',array('id' => 'is_anonymous_candidate_allowed','div' => false,));\n                ?>\n                Allow Anonymous Candidates\n            ",
+                              "\n                Form->checkbox('can_tab_be_closed',array('id' => 'can_tab_be_closed','div' => false,));\n                ?>\n                Close the browser tab on clicking the button after assessment is completed\n            ",
+                              "\n                Form->checkbox('can_show_country_list',array('id' => 'can_show_country_list','div' => false,));\n                ?>\n                Show country list to a candidate\n            "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "edit_cfa.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Add new Theme',true),array('plugin' => 'crpts','controller' => 'cfa_core_themes','action' => 'add',$hash),array('class' => 'btn btnThin','title' => 'Add Cultural Fit Assessment','escape' => false));",
+                        "this->Html->link('',$cfaLink,$cfaAttr);",
+                        "this->Html->link('','javascript:alert(\"Unable to delete cultural theme, it is already in use.\")',array('title' => 'Delete Cultural Theme','escape' => false,'class' => 'deleteIcon deleteDa '));",
+                        "this->Html->link('',array('plugin' => 'crpts','controller' => 'cfa_questions','action' => 'edit',$hash,$culturalAssessment['CfaCoreTheme']['id']),array('class' => 'editIcon','title' => 'Edit Cultural theme'));",
+                        "this->Html->link('',array('plugin' => 'crpts','controller' => 'cfa_parameters','action' => 'edit',$hash),array('class' => 'editIcon','title' => 'Edit Cultural Fit Assessment'));"
+                    ],
+                    "title":["Add Cultural Fit Assessment", "Edit Behaviour", "Delete Cultural Theme",
+                             "Delete Cultural Theme", "Edit Cultural theme", "Edit Cultural Fit Assessment",
+                             "Done With Editing"],
+                    "alert_messages":["'\".$message.\"'", "\"Unable to delete cultural theme, it is already in use.\"",
+                                      "'There is only one cultural theme,You not able to delete'"],
+                    "submit":["Done With Editing"],
+                    "labels":["Critical theme"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "get_cfa_slider_data.ctp":{
+                    "title":["Done"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Create CFA',true),array('plugin' => 'crpts','controller' => 'cfas','action' => 'add'),array('title' => 'Add New','class' => 'btn btnThin','escape' => false));",
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'icon-wrench')) . 'Manage CMS',array('plugin' => 'cms','controller' => 'instructions','action' => 'edit_assessment_pages','welcome_page',$cfa['Cfa']['id'],1),array('class' => 'manageCMSLink','escape' => false));",
+                        "this->Html->link(__('Click Here to Complete'),array('plugin' => 'crpts','controller' => 'cfa_core_themes','action' => 'select',$cfa['Cfa']['hash']),array('class' => 'btn','title' => 'Click Here to Complete'));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'viewBtn'))),array('plugin' => 'crpts','controller' => 'cfas','action' => 'view',$cfa['Cfa']['hash']),array('title' => 'View CFA','escape' => false,));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'editBtn'))),array('plugin' => 'crpts','controller' => 'cfas','action' => 'edit_cfa',$cfa['Cfa']['hash']),array('title' => 'Edit CFA','escape' => false,'class' => 'checkCandidateStatus','data-id' => $cfa['Cfa']['id']));"
+                    ],
+                    "title":["Add New", "Click Here to Complete", "View CFA", "Edit CFA", "Delete CFA", "Delete CFA"],
+                    "place_holders":["Search"],
+                    "alert_messages":["'Can not edit overall score as there are live users'",
+                                      "'Assessment can not be edited, error retrieving status of active candidates.'",
+                                      "'Assessment can not be edited as there are live users'",
+                                      "'You can not delete Cfa'"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "preview.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Add new Theme',true),array('plugin' => 'das','controller' => 'core_themes','action' => 'add'),array('class' => 'btn btnThin checkCandidateStatus','title' => 'Add new theme','escape' => false));",
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => '')) . 'Edit Assessment',true),array('plugin' => 'das','controller' => 'core_themes','action' => 'edit_theme'),array('class' => 'btn btnThin checkCandidateStatus','title' => 'Edit Assessment','escape' => false));"
+                    ],
+                    "title":["Add new theme", "Edit Assessment"],
+                    "alert_messages":[
+                        "'You can not edit this CFA as there are active users, please try again after sometime'"],
+                    "labels":[" Critical theme        "]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "questions.ctp":{
+                    "place_holders":["Alias Name"],
+                    "link":[
+                        "this->Html->link(__('Reverse Scores'),'javascript:void(0);',array('title' => 'Click here to reverse the score','class' => 'btn reverseScore','div' => false));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage3  fancybox_link'));"
+                    ],
+                    "title":["Click here to reverse the score"],
+                    "submit":["Set Score", "Save ", "Save "],
+                    "alert_messages":["\"Maximum limit reached\"",
+                                      "'Select ' + noOfQuestionsPerTheme + ' Questions for each theme'",
+                                      "'Please Correct the scoring error'"],
+                    "labels":[
+                        "Form->checkbox('CfaCoreTheme.is_critical',array('id' => $key,'div' => false,'class' => 'isCritical','data-id' => $cfaCoreTheme['CfaCoreTheme']['id']));\n\necho $this->Form->hidden('CfaCoreTheme.id',array('value' => $cfaCoreTheme['CfaCoreTheme']['id']),array('class' => 'ctOrgProductId'));\necho $this->Form->hidden('CfaCoreTheme.min_pass_score',array('value' => '','id' => 'minPassScore'));\necho $this->Form->hidden('CfaCoreTheme.max_pass_score',array('value' => '','id' => 'maxPassScore'));\n\n?>Critical theme\n                ",
+                        "    ", "1. Low description", "2. High description",
+                        "1. If candidate falls in the area Fail (less than most        suited)",
+                        "2. If candidate falls in the area Acceptable (less than most        suited)",
+                        "3. If candidate falls in the area Most suited",
+                        "4. If candidate falls in the area Acceptable (greater than most        suited)",
+                        "5. If candidate falls in the area Fail (greater than most        suited)",
+                        "            Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>        Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        [],
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "set_parameters.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "alert_messages":[
+                        "\"You can't select these response and question count, as scale can't be formed based on that\""
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "set_score.ctp":{
+                    "title":["Done"],
+                    "submit":["Done"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Cfas":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'icon-wrench iconManageCMS')),true),array('plugin' => 'cms','controller' => 'instructions','action' => 'edit_assessment_pages','welcome_page',$cfa['Cfa']['id'],1),array('title' => 'Manage CMS','escape' => false,'class' => 'btn'));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'editBtn')),true),array('plugin' => 'crpts','controller' => 'cfas','action' => 'edit_cfa',$cfa['Cfa']['hash']),array('title' => 'Edit Assessment','escape' => false,'class' => 'btn checkCandidateActiveStatus','data-id' => $cfa['Cfa']['id']));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'deleteIcon'))),'javascript:alert(\"Unable to delete Cfa, it is already in use.\")',array('title' => 'Delete Assessment','escape' => false,'class' => 'btn'));",
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'crpts','controller' => 'cfas','action' => 'index'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Manage CMS", "Edit Assessment", "Delete Assessment", "Delete Assessment", "Back"],
+                    "alert_messages":["\"Unable to delete Cfa, it is already in use.\"",
+                                      "'Assessment can not be edited, error retrieving status of active candidates.'",
+                                      "'Assessment can not be edited as there are live users'"],
+                    "place_holders":["Start Date", "End Date", "Search"],
+                    "labels":[" Critical theme        "]
+                }
+            }
+        }
+    ],
+    "Countries":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Countries":{
+                "index.ctp":{
+                    "place_holders":["Type here to search"],
+                    "alert_messages":["deleteStatus"],
+                    "labels":["Select Countries from theglobal list", "Country Name ",
+                              "List of countries    added"]
+                }
+            }
+        }
+    ],
+    "Elements":[
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Elements":{
+                "cfa_candidates_list.ctp":{
+                    "alert_messages":["'Unable to send email to anonymous candidate'"],
+                    "link":[
+                        "this->Html->link(__(''),array('plugin' => 'crpts','controller' => 'reports','action' => 'cfa_candidate',$candidate['CfaCandidate']['id']),array('title' => 'Click here to view report'))?>",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'msgBtn'))),$sendEmailLink,array('escape' => false,'class' => $sendEmailFancyBox,'title' => 'click here to send mail'));"
+                    ],
+                    "title":["Click here to view report", "click here to send mail"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Elements":{
+                "report_text_behaviour.ctp":{
+                    "labels":["1. If candidate falls in Risk", "2. If candidate falls in OK fit",
+                              "3. If candidate falls in Strong fit *", "1. If candidate falls in Risk",
+                              "2. If candidate falls in OK fit", "3. If candidate falls in Strong fit *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Elements":{
+                "report_text_cfa.ctp":{
+                    "labels":["1. If candidate falls in Risk", "2. If candidate falls in OK fit *",
+                              "3. If candidate falls in Strong fit    ",
+                              "1. If candidate falls in Risk",
+                              "2. If candidate falls in OK fit",
+                              "3. If candidate falls in Strong fit *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Elements":{
+                "report_text_cultural_theme.ctp":{
+                    "labels":["1. Low description", "2. High description",
+                              "1. If candidate falls in the area Fail (less than most        suited)",
+                              "2. If candidate falls in the area Acceptable (less than most        suited)",
+                              "3. If candidate falls in the area Most suited",
+                              "4. If candidate falls in the area Acceptable (greater than most        suited)",
+                              "5. If candidate falls in the area Fail (greater than most        suited)",
+                              "1. Low description", "2. High description",
+                              "1. If candidate falls in the area Fail (less than most        suited)",
+                              "2. If candidate falls in the area Acceptable (less than most        suited)",
+                              "3. If candidate falls in the area Most suited",
+                              "4. If candidate falls in the area Acceptable (greater than most        suited)",
+                              "5. If candidate falls in the area Fail (greater than most        suited)"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Elements":{
+                "report_text_rpa.ctp":{
+                    "labels":["1. If candidate falls in Risk", "2. If candidate falls in OK fit",
+                              "3. If candidate falls in Strong fit *", "1. If candidate falls in Risk",
+                              "2. If candidate falls in OK fit", "3. If candidate falls in Strong fit *"]
+                }
+            }
+        }
+    ],
+    "Helper":[
+        []
+    ],
+    "Reports":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Reports":{
+                "cfa_candidate.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'crpts','controller' => 'cfas','action' => 'view',isset($candidateInfo['Cfa']['hash']) ? $candidateInfo['Cfa']['hash'] : ''),array('class' => 'backBtn pull-right','title' => 'Back','escape' => false));",
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'pdfIcon')) . __('Export to PDF'),array('plugin' => 'crpts','controller' => 'reports','action' => 'export_cfa_candidate',isset($cfaCandidateId) ? $cfaCandidateId : ''),array('class' => 'btn btnThin pull-right','escape' => false));"
+                    ],
+                    "title":["Back"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Reports":{
+                "job_role_candidate.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'pdfIcon')) . __('Export to PDF'),array('plugin' => 'crpts','controller' => 'reports','action' => 'export_job_role_candidate',isset($jobRoleCandidateId) ? $jobRoleCandidateId : ''),array('class' => 'btn btnThin pull-right','escape' => false));"
+                    ]
+                }
+            }
+        },
+        []
+    ],
+    "RpaBehaviours":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaBehaviours":{
+                "add.ctp":{
+                    "submit":["Save and Exit", "Next"],
+                    "labels":[
+                        "Form->input('RpaBehaviour.' . $key . '.id',array('value' => $rpaBehaviourId));        }        echo $this->Form->checkbox('RpaBehaviour.' . $key . '.da_organisations_product_id',array('value' => $da['DaOrganisationsProduct']['id'],'id' => 'RpaBehaviour' . $key . 'da_organisations_product_id','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key,'checked' => $checked));\n        ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaBehaviours":{
+                "add_more.ctp":{
+                    "submit":["Save and Exit", "Next"],
+                    "labels":[
+                        "    Form->input('RpaBehaviour.' . $key . '.id',array('value' => $rpaBehaviourId));            }            echo $this->Form->checkbox('RpaBehaviour.' . $key . '.da_organisations_product_id',array('value' => $da['DaOrganisationsProduct']['id'],'id' => 'RpaBehaviour' . $key . 'da_organisations_product_id','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key,'checked' => $checked));\n            ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaBehaviours":{
+                "edit.ctp":{
+                    "link":["this->Html->link(__('List Rpa Behaviours'),array('action' => 'index')); ?><\/li>",
+                            "this->Html->link(__('List Rpas'),array('controller' => 'rpas','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Rpa'),array('controller' => 'rpas','action' => 'add')); ?> <\/li>",
+                            "this->Html->link(__('List Da Organisations Products'),array('controller' => 'da_organisations_products','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Da Organisations Product'),array('controller' => 'da_organisations_products','action' => 'add')); ?> <\/li>",
+                            "this->Html->link(__('List Rpa Scenarios'),array('controller' => 'rpa_scenarios','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Rpa Scenario'),array('controller' => 'rpa_scenarios','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaBehaviours":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link($rpaBehaviour['Rpa']['name'],array('controller' => 'rpas','action' => 'view',$rpaBehaviour['Rpa']['id'])); ?>",
+                        "this->Html->link($rpaBehaviour['DaOrganisationsProduct']['name'],array('controller' => 'da_organisations_products','action' => 'view',$rpaBehaviour['DaOrganisationsProduct']['id'])); ?>",
+                        "this->Html->link(__('View'),array('action' => 'view',$rpaBehaviour['RpaBehaviour']['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('action' => 'edit',$rpaBehaviour['RpaBehaviour']['id'])); ?>",
+                        "this->Html->link(__('New Rpa Behaviour'),array('action' => 'add')); ?><\/li>",
+                        "this->Html->link(__('List Rpas'),array('controller' => 'rpas','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa'),array('controller' => 'rpas','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Da Organisations Products'),array('controller' => 'da_organisations_products','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Da Organisations Product'),array('controller' => 'da_organisations_products','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Scenarios'),array('controller' => 'rpa_scenarios','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Scenario'),array('controller' => 'rpa_scenarios','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaBehaviours":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($rpaBehaviour['Rpa']['name'],array('controller' => 'rpas','action' => 'view',$rpaBehaviour['Rpa']['id'])); ?>",
+                        "this->Html->link($rpaBehaviour['DaOrganisationsProduct']['name'],array('controller' => 'da_organisations_products','action' => 'view',$rpaBehaviour['DaOrganisationsProduct']['id'])); ?>",
+                        "this->Html->link(__('Edit Rpa Behaviour'),array('action' => 'edit',$rpaBehaviour['RpaBehaviour']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Behaviours'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Behaviour'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpas'),array('controller' => 'rpas','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa'),array('controller' => 'rpas','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Da Organisations Products'),array('controller' => 'da_organisations_products','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Da Organisations Product'),array('controller' => 'da_organisations_products','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Scenarios'),array('controller' => 'rpa_scenarios','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Scenario'),array('controller' => 'rpa_scenarios','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'rpa_scenarios','action' => 'view',$rpaScenario['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'rpa_scenarios','action' => 'edit',$rpaScenario['id'])); ?>",
+                        "this->Html->link(__('New Rpa Scenario'),array('controller' => 'rpa_scenarios','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "RpaResponses":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaResponses":{
+                "add.ctp":{
+                    "place_holders":["Enter alias to the scenario", "Enter alias to the response"],
+                    "link":[
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage fancybox_link'));"
+                    ],
+                    "submit":["Save "],
+                    "alert_messages":["'Response Tag is not allocated to one of the response'"],
+                    "labels":[
+                        "        Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 69)); ?>    Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','checked' => $checked,'value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaResponses":{
+                "add_more.ctp":{
+                    "place_holders":["Enter alias to the scenario", "Enter alias to the response"],
+                    "link":[
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage fancybox_link'));"
+                    ],
+                    "submit":["Save "],
+                    "alert_messages":["'Response Tag is not allocated to one of the response'"],
+                    "labels":[
+                        "        Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 69)); ?>    Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','checked' => $checked,'value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaResponses":{
+                "edit.ctp":{
+                    "place_holders":["Enter alias to the scenario", "Enter alias to the response"],
+                    "link":[
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage fancybox_link'));"
+                    ],
+                    "alert_messages":["'Response Tag is not allocated to one of the response'"],
+                    "labels":[
+                        "    Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 69)); ?>    Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','checked' => $checked,'value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));        ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaResponses":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link($rpaResponse['RpaScenario']['id'],array('controller' => 'rpa_scenarios','action' => 'view',$rpaResponse['RpaScenario']['id'])); ?>",
+                        "this->Html->link($rpaResponse['ScenarioResponse']['id'],array('controller' => 'scenario_responses','action' => 'view',$rpaResponse['ScenarioResponse']['id'])); ?>",
+                        "this->Html->link($rpaResponse['RpaTag']['name'],array('controller' => 'rpa_tags','action' => 'view',$rpaResponse['RpaTag']['id'])); ?>",
+                        "this->Html->link(__('View'),array('action' => 'view',$rpaResponse['RpaResponse']['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('action' => 'edit',$rpaResponse['RpaResponse']['id'])); ?>",
+                        "this->Html->link(__('New Rpa Response'),array('action' => 'add')); ?><\/li>",
+                        "this->Html->link(__('List Rpa Scenarios'),array('controller' => 'rpa_scenarios','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Scenario'),array('controller' => 'rpa_scenarios','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Scenario Responses'),array('controller' => 'scenario_responses','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Scenario Response'),array('controller' => 'scenario_responses','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Tags'),array('controller' => 'rpa_tags','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Tag'),array('controller' => 'rpa_tags','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaResponses":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($rpaResponse['RpaScenario']['id'],array('controller' => 'rpa_scenarios','action' => 'view',$rpaResponse['RpaScenario']['id'])); ?>",
+                        "this->Html->link($rpaResponse['ScenarioResponse']['id'],array('controller' => 'scenario_responses','action' => 'view',$rpaResponse['ScenarioResponse']['id'])); ?>",
+                        "this->Html->link($rpaResponse['RpaTag']['name'],array('controller' => 'rpa_tags','action' => 'view',$rpaResponse['RpaTag']['id'])); ?>",
+                        "this->Html->link(__('Edit Rpa Response'),array('action' => 'edit',$rpaResponse['RpaResponse']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Responses'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Response'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Scenarios'),array('controller' => 'rpa_scenarios','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Scenario'),array('controller' => 'rpa_scenarios','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Scenario Responses'),array('controller' => 'scenario_responses','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Scenario Response'),array('controller' => 'scenario_responses','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Tags'),array('controller' => 'rpa_tags','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Tag'),array('controller' => 'rpa_tags','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "RpaScenarios":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaScenarios":{
+                "add.ctp":{
+                    "submit":["Save and Exit", "Next"],
+                    "alert_messages":["'Please select at least one scenario per behaviour'"],
+                    "labels":[
+                        "        Form->hidden('RpaBehaviour.' . $keyBehaviours . '.id',array('value' => $rpaDa['RpaBehaviour']['id']));        echo $this->Form->checkbox('RpaBehaviour.' . $keyBehaviours . '.is_critical',array('checked' => $rpaDa['RpaBehaviour']['is_critical']));        ?>          Critical Behaviour    ",
+                        "Form->input('Dummy.select_all',array('type' => 'checkbox','class' => 'selectAll','id' => $rpaDa['DaOrganisationsProduct']['category_id'],'hiddenField' => false,'div' => false,'label' => false,));?>\n        Select All        ",
+                        "            Form->hidden('RpaScenario.' . $count . '.id',array('value' => $scenario['RpaScenario']['id'],));            }                    echo $this->Form->hidden('RpaScenario.' . $count . '.rpa_behaviour_id',array('value' => $rpaDa['RpaBehaviour']['id'],));                    echo $this->Form->checkbox('RpaScenario.' . $count . '.scenario_id',array('value' => $scenario['Scenario']['id'],'class' => 'scenarioCheckboxes scenarioCheckbox' . $rpaDa['RpaBehaviour']['id'],'data-id' => $rpaDa['RpaBehaviour']['id'],'checked' => $scenario['RpaScenario']['is_checked']));                    echo $this->Html->tag('span',$scenario['Scenario']['title']);                    ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaScenarios":{
+                "add_more.ctp":{
+                    "submit":["Save and Exit", "Next"],
+                    "alert_messages":["'Please select at least one scenario per behaviour'"],
+                    "labels":[
+                        "        Form->hidden('RpaBehaviour.' . $keyBehaviours . '.id',array('value' => $rpaDa['RpaBehaviour']['id']));        echo $this->Form->checkbox('RpaBehaviour.' . $keyBehaviours . '.is_critical',array('checked' => $rpaDa['RpaBehaviour']['is_critical']));        ?>          Critical Behaviour    ",
+                        "Form->input('Dummy.select_all',array('type' => 'checkbox','class' => 'selectAll','id' => $rpaDa['DaOrganisationsProduct']['category_id'],'hiddenField' => false,'div' => false,'label' => false,));?>\n        Select All        ",
+                        "            Form->hidden('RpaScenario.' . $count . '.id',array('value' => $scenario['RpaScenario']['id'],));            }                    echo $this->Form->hidden('RpaScenario.' . $count . '.rpa_behaviour_id',array('value' => $rpaDa['RpaBehaviour']['id'],));                    echo $this->Form->checkbox('RpaScenario.' . $count . '.scenario_id',array('value' => $scenario['Scenario']['id'],'class' => 'scenarioCheckboxes scenarioCheckbox' . $rpaDa['RpaBehaviour']['id'],'data-id' => $rpaDa['RpaBehaviour']['id'],'checked' => $scenario['RpaScenario']['is_checked']));                    echo $this->Html->tag('span',$scenario['Scenario']['title']);                    ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaScenarios":{
+                "add_response_tags.ctp":{
+                    "place_holders":["Enter alias to the scenario", "Enter alias to the response"],
+                    "link":[
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage fancybox_link'));"
+                    ],
+                    "submit":["Save "],
+                    "alert_messages":["'Response Tag is not allocated to one of the response'"],
+                    "labels":[
+                        "        Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 69)); ?>    Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','checked' => $checked,'value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaScenarios":{
+                "edit.ctp":{
+                    "link":["this->Html->link(__('List Rpa Scenarios'),array('action' => 'index')); ?><\/li>",
+                            "this->Html->link(__('List Rpa Behaviours'),array('controller' => 'rpa_behaviours','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Rpa Behaviour'),array('controller' => 'rpa_behaviours','action' => 'add')); ?> <\/li>",
+                            "this->Html->link(__('List Scenarios'),array('controller' => 'scenarios','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Scenario'),array('controller' => 'scenarios','action' => 'add')); ?> <\/li>",
+                            "this->Html->link(__('List Assessment Images'),array('controller' => 'assessment_images','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Assessment Image'),array('controller' => 'assessment_images','action' => 'add')); ?> <\/li>",
+                            "this->Html->link(__('List Rpa Responses'),array('controller' => 'rpa_responses','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Rpa Response'),array('controller' => 'rpa_responses','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaScenarios":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link($rpaScenario['RpaBehaviour']['id'],array('controller' => 'rpa_behaviours','action' => 'view',$rpaScenario['RpaBehaviour']['id'])); ?>",
+                        "this->Html->link($rpaScenario['Scenario']['title'],array('controller' => 'scenarios','action' => 'view',$rpaScenario['Scenario']['id'])); ?>",
+                        "this->Html->link($rpaScenario['AssessmentImage']['id'],array('controller' => 'assessment_images','action' => 'view',$rpaScenario['AssessmentImage']['id'])); ?>",
+                        "this->Html->link(__('View'),array('action' => 'view',$rpaScenario['RpaScenario']['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('action' => 'edit',$rpaScenario['RpaScenario']['id'])); ?>",
+                        "this->Html->link(__('New Rpa Scenario'),array('action' => 'add')); ?><\/li>",
+                        "this->Html->link(__('List Rpa Behaviours'),array('controller' => 'rpa_behaviours','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Behaviour'),array('controller' => 'rpa_behaviours','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Scenarios'),array('controller' => 'scenarios','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Scenario'),array('controller' => 'scenarios','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Assessment Images'),array('controller' => 'assessment_images','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Assessment Image'),array('controller' => 'assessment_images','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Responses'),array('controller' => 'rpa_responses','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Response'),array('controller' => 'rpa_responses','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/RpaScenarios":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($rpaScenario['RpaBehaviour']['id'],array('controller' => 'rpa_behaviours','action' => 'view',$rpaScenario['RpaBehaviour']['id'])); ?>",
+                        "this->Html->link($rpaScenario['Scenario']['title'],array('controller' => 'scenarios','action' => 'view',$rpaScenario['Scenario']['id'])); ?>",
+                        "this->Html->link($rpaScenario['AssessmentImage']['id'],array('controller' => 'assessment_images','action' => 'view',$rpaScenario['AssessmentImage']['id'])); ?>",
+                        "this->Html->link(__('Edit Rpa Scenario'),array('action' => 'edit',$rpaScenario['RpaScenario']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Scenarios'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Scenario'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Behaviours'),array('controller' => 'rpa_behaviours','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Behaviour'),array('controller' => 'rpa_behaviours','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Scenarios'),array('controller' => 'scenarios','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Scenario'),array('controller' => 'scenarios','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Assessment Images'),array('controller' => 'assessment_images','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Assessment Image'),array('controller' => 'assessment_images','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Responses'),array('controller' => 'rpa_responses','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Response'),array('controller' => 'rpa_responses','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'rpa_responses','action' => 'view',$rpaResponse['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'rpa_responses','action' => 'edit',$rpaResponse['id'])); ?>",
+                        "this->Html->link(__('New Rpa Response'),array('controller' => 'rpa_responses','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "Rpas":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "add.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'crpts','controller' => 'rpas','action' => 'index'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back", "Save and Move to Next Step"],
+                    "place_holders":["Button title", "Button title"],
+                    "labels":["RPA Title *", "Retake Days *", "Button Title(Success)*", "Redirect URL(Success) *",
+                              "Button Title(Fail)*", "Redirect URL(Fail) *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "edit.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'crpts','controller' => 'rpas','action' => 'index'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back", "Save and Move to Next Step"],
+                    "place_holders":["Button title", "Button title"],
+                    "labels":["RPA Title *", "Retake Days *", "Button Title(Success) *", "Redirect URL(Success) *",
+                              "Button Title(Fail)*", "Redirect URL(Fail) *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "edit_assessment.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'New Behaviours to RPA',true),array('plugin' => 'crpts','controller' => 'rpa_behaviours','action' => 'add_more',$rpa['Rpa']['hash']),array('class' => 'btn btnThin','title' => 'Add New Behaviour','escape' => false));",
+                        "this->Html->link('',$editRpaLink,$editRpaAttr);",
+                        "this->Html->link('','javascript:alert(\"Unable to delete Behaviour, it is already in use.\")',array('title' => 'Delete Behaviour','escape' => false,'class' => 'deleteIcon deleteDa '));",
+                        "this->Html->link('',array('plugin' => 'crpts','controller' => 'rpa_responses','action' => 'edit',$rpa['Rpa']['hash'],$behaviour['RpaBehaviour']['id']),array('class' => 'editIcon','title' => 'Edit Behaviour'));",
+                        "this->Html->link('Done With Editing',$link,array('class' => 'btnBlack noSpace btn pull-right','title' => 'Done With Editing',\"id\" => \"completeEditing\"));"
+                    ],
+                    "title":["Add New Behaviour", "Edit Basic Info", "Delete Behaviour", "Delete Behaviour",
+                             "Edit Behaviour", "Done With Editing"],
+                    "alert_messages":["\"Unable to delete Behaviour, it is already in use.\"",
+                                      "'There is only one behaviour, You not able to delete it.'"],
+                    "labels":["Critical"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "edit_score.ctp":{
+                    "place_holders":["Retake Days"],
+                    "title":["Done"],
+                    "submit":["Done"],
+                    "alert_messages":["'Retake days should be numeric and less than 365 days'", "'Enter a valid url'"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "get_rpa_data.ctp":{
+                    "title":["Done"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Create RPA',true),array('plugin' => 'crpts','controller' => 'rpas','action' => 'add'),array('title' => 'Add New','class' => 'btn btnThin','escape' => false));",
+                        "this->Html->link(__('Click here to select behaviours'),array('plugin' => 'das','controller' => 'categories','action' => 'select_behaviours'),array('title' => 'Click here to select behaviours','class' => '','escape' => false));",
+                        "this->Html->link(__('Click Here to Complete'),array('plugin' => 'crpts','controller' => 'rpa_behaviours','action' => 'add',$rpa['Rpa']['hash']),array('class' => 'btn'));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'viewBtn'))),array('plugin' => 'crpts','controller' => 'rpas','action' => 'view',$rpa['Rpa']['hash']),array('title' => 'View RPA','escape' => false,));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'editBtn editJobRole'))),array('plugin' => 'crpts','controller' => 'rpas','action' => 'edit_assessment',$rpa['Rpa']['hash']),array('title' => 'Edit RPA','escape' => false,'class' => 'checkCandidateStatus','data-id' => $rpa['Rpa']['id'],));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'deleteBtn deleteJobRole'))),'javascript:alert(\"Unable to delete RPA, it is already in use.\")',array('title' => 'Delete RPA','escape' => false,\/* 'class'  => 'checkCandidateStatus'*\/));"
+                    ],
+                    "title":["Add New", "Click here to select behaviours", "View RPA", "Edit RPA", "Delete RPA",
+                             "Delete RPA"],
+                    "place_holders":["Search"],
+                    "alert_messages":["\"Unable to delete RPA, it is already in use.\"",
+                                      "'Can not edit overall score as there are live users'",
+                                      "'Assessment can not be edited, error retrieving status of active candidates.'",
+                                      "'Assessment can not be edited as there are live users'"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "set_score.ctp":{
+                    "place_holders":["Retake Days"],
+                    "title":["Done"],
+                    "submit":["Done"],
+                    "alert_messages":["'Retake days should be numeric and less than 365 days'", "'Enter a valid url'"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "update_score.ctp":{
+                    "place_holders":["Retake Days"],
+                    "title":["Done"],
+                    "submit":["Done"],
+                    "alert_messages":["'Retake days should be numeric and less than 365 days'", "'Enter a valid url'"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Crpts\/View\/Rpas":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'editBtn')),true),array('plugin' => 'crpts','controller' => 'rpas','action' => 'edit_assessment',$rpa['Rpa']['hash']),array('title' => 'Edit Assessment','escape' => false,'class' => 'btn checkCandidateStatus','data-id' => $rpa['Rpa']['id'],));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'deleteIcon'))),'javascript:alert(\"Unable to delete RPA, it is already in use.\")',array('title' => 'Delete Assessment','escape' => false,'class' => 'btn'));",
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'crpts','controller' => 'rpas','action' => 'index'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Edit Assessment", "Delete Assessment", "Delete Assessment", "Back"],
+                    "alert_messages":["\"Unable to delete RPA, it is already in use.\"",
+                                      "'Assessment can not be edited, error retrieving status of active candidates.'",
+                                      "'Assessment can not be edited as there are live users'"]
+                }
+            }
+        }
+    ]
+}, "Customisations":{
+    "Elements":[
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Elements":{
+                "test.ctp":{
+                    "title":["Go to previous question", "Go to next question"],
+                    "submit":["Previous question", "Next question"],
+                    "alert_messages":["'Please choose a response before continuing'"]
+                }
+            }
+        }
+    ],
+    "Helper":[
+        []
+    ],
+    "Skys":[
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "cancelled.ctp":{
+                    "link":[
+                        "this->Html->link(__('Continue'),$redirectionUrl,array('class' => 'btnBlue','title' => 'Continue'));"
+                    ],
+                    "title":["Continue"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "candidate_add.ctp":{
+                    "place_holders":["First Name", "Last Name", "Email address"],
+                    "title":["Start assessment"],
+                    "submit":["Get started"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "cfa1_question.ctp":{
+                    "submit":["Previous question", "Next question"],
+                    "title":["Go to next question"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "cfa_report.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'pdfIcon','title' => 'Export to pdf')) . __('Export to PDF'),array('plugin' => 'users','controller' => 'candidates','action' => 'export_cfa_report',isset($cfaCandidateId) ? $cfaCandidateId : ''),array('class' => 'btn btnThin pull-right','escape' => false));"
+                    ],
+                    "title":["Export to pdf"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "error.ctp":{
+                    "link":[
+                        "this->Html->link(__('Back'),$redirectCallBackURL,array('class' => 'btnBlue','title' => 'Back'));"
+                    ],
+                    "title":["Back"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "maintenance.ctp":{
+                    "link":[
+                        "this->Html->link(__('Continue'),$redirectionUrl,array('class' => 'btnBlue','title' => 'Continue'));"
+                    ],
+                    "title":["Continue"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "report.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'pdfIcon','title' => 'Export report to pdf')) . __('Export to PDF'),array('plugin' => 'users','controller' => 'candidates','action' => 'export_pdf_report',isset($jobRoleCandidateId) ? $jobRoleCandidateId : ''),array('class' => 'btn btnThin pull-right','escape' => false));"
+                    ],
+                    "title":["Export report to pdf"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "retake.ctp":{
+                    "link":[
+                        "this->Html->link(__('Continue'),$redirectionUrl,array('class' => 'btnBlue','title' => 'continue'));"
+                    ],
+                    "title":["continue"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "rpa_scenario.ctp":{
+                    "title":["Continue"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Customisations\/View\/Skys":{
+                "unavailable.ctp":{
+                    "link":[
+                        "this->Html->link(__('Continue'),$redirectionUrl,array('class' => 'btnBlue','title' => 'Continue'));"
+                    ],
+                    "title":["Continue"]
+                }
+            }
+        },
+        []
+    ]
+}, "Das":{
+    "Assessments":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Assessments":{
+                "index.ctp":{
+                    "labels":["Name", "Email"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Assessments":{
+                "live_test.ctp":{
+                    "labels":["Name", "Email"]
+                }
+            }
+        }
+    ],
+    "Categories":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "add_core_themes.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "labels":[
+                        "    Form->checkbox('DaOrganisationsProduct.' . $key . '.category_id',array('value' => $key,'id' => 'DaOrganisationsProduct' . $key . 'category_name_id','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key));    \/*pass organisation id as hidden to store *\/        echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.organisation_id',array('value' => $organisationId));        \/*pass product id as hidden to store *\/        echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.product_id',array('value' => $productId));    if (isset($selectedDAs[$key]['id'])) {echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.id',array('value' => $selectedDAs[$key]['id']));        }    ?>    Form->hidden('DaOrganisationsProduct.' . $key . '.name',array('value' => $da,'label' => false,'div' => false));?>\n\n        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "add_more_behaviours.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Add"],
+                    "labels":[
+                        "    Form->checkbox('DaOrganisationsProduct.' . $key . '.category_id',array('value' => $da['Category']['id'],'id' => '','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key,'label' => $da['Category']));\n\n    \/*pass organisation id as hidden to store *\/        echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.organisation_id',array('value' => $organisationId));        \/*pass product id as hidden to store *\/        echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.product_id',array('value' => $productId));\n\n    ?>    Form->hidden('DaOrganisationsProduct.' . $key . '.name',array('value' => $da['Category']['name'],'label' => false,'div' => false));?>\n\n        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "edit.ctp":{
+                    "link":["this->Html->link(__('List Categories'),array('action' => 'index')); ?><\/li>",
+                            "this->Html->link(__('List Core Themes'),array('controller' => 'core_themes','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Core Theme'),array('controller' => 'core_themes','action' => 'add')); ?> <\/li>",
+                            "this->Html->link(__('List Da Organisations Products'),array('controller' => 'da_organisations_products','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Da Organisations Product'),array('controller' => 'da_organisations_products','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "edit_response_tags.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Save"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link('',array('plugin' => 'das','controller' => 'categories','action' => 'edit_response_tags'),array('class' => 'editIcon','title' => \"Edit\"));"
+                    ],
+                    "alert_messages":["flashHtml", "data.msg", "deleteResp.msg", "deleteResp.msg", "data.msg"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "select.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "link":["this->Html->link('Back',"],
+                    "title":["Back"],
+                    "labels":[
+                        "        Form->checkbox('DaOrganisationsProduct.' . $key . '.category_id',array('value' => $key,'id' => 'DaOrganisationsProduct' . $key . 'category_name_id','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key));        ?>            Form->hidden('DaOrganisationsProduct.' . $key . '.organisation_id',array('value' => $organisationId));        \/*pass product id as hidden to store *\/        echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.product_id',array('value' => $productId));        echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.name',array('value' => $da,'label' => false,'div' => false));        ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "select_behaviours.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "labels":[
+                        "        Form->checkbox('DaOrganisationsProduct.' . $key . '.category_id',array('value' => $da['Category']['id'],'id' => 'DaOrganisationsProduct' . $key . 'category_name_id','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key));    echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.organisation_id',array('value' => $organisationId));    echo $this->Form->hidden('DaOrganisationsProduct.' . $key . '.product_id',array('value' => $productId));    ?>        Form->hidden('DaOrganisationsProduct.' . $key . '.name',array('value' => $da['Category']['name'],'label' => false,'div' => false));        ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "set_response_tags.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Done"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/Categories":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link(__('Edit Category'),array('action' => 'edit',$category['Category']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Categories'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Category'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Core Themes'),array('controller' => 'core_themes','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Core Theme'),array('controller' => 'core_themes','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Da Organisations Products'),array('controller' => 'da_organisations_products','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Da Organisations Product'),array('controller' => 'da_organisations_products','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'core_themes','action' => 'view',$coreTheme['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'core_themes','action' => 'edit',$coreTheme['id'])); ?>",
+                        "this->Html->link(__('New Core Theme'),array('controller' => 'core_themes','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'da_organisations_products','action' => 'view',$daOrganisationsProduct['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'da_organisations_products','action' => 'edit',$daOrganisationsProduct['id'])); ?>",
+                        "this->Html->link(__('New Da Organisations Product'),array('controller' => 'da_organisations_products','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "CoreThemes":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "add.ctp":{
+                    "place_holders":["Alias Name"],
+                    "title":["Done"],
+                    "submit":["Next"],
+                    "labels":[
+                        "        Form->checkbox('CoreThemesOrganisationsProduct.' . $key . '.core_theme_id',array('value' => $coreTheme['id'],'class' => 'CoreThemeCheckbox','data-id' => $coreTheme['id'],'id' => 'CoreThemeCheckbox_' . $coreTheme['id'],'type' => 'checkbox','hiddenField' => false));        echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.product_id',array('value' => $productId));        echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.organisation_id',array('value' => $organisationId));        echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.name',array('value' => $coreTheme['name']));        ?>            "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "edit.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','Add more themes',array('class' => 'addSmallIcon')),'#',array('title' => 'Add Cultural Assessment','class' => 'btn btnThin',));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage2 fancybox_link'));"
+                    ],
+                    "title":["Add Cultural Assessment", "Done With Editing"],
+                    "place_holders":["user alias"],
+                    "submit":["Done With Editing"],
+                    "alert_messages":["'Please select ' + noOfQuestionsPerTheme + ' questions to continue'",
+                                      "\"Maximum limit reached\"", "'Please correct score error'",
+                                      "'Please correct score error'"],
+                    "labels":[
+                        "Form->checkbox('CoreThemesOrganisationsProduct.is_critical',array('checked' => $this->request->data['CoreThemesOrganisationsProduct']['is_critical'],'id' => $this->request->data['CoreThemesOrganisationsProduct']['id'],));?> Critical theme\n                ",
+                        "",
+                        "    Form->checkbox(\"CrptCtQuestion.\" . $key . \".is_reverse\",array('checked' => $reverseChecked,'id' => 'reverse' . $key,'div' => false));    ?>    Reverse the Scale",
+                        "    Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','style' => 'margin:5px 0 0 0','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "edit_theme.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Add new Theme',true),array('plugin' => 'das','controller' => 'core_themes','action' => 'add'),array('class' => 'btn btnThin','title' => 'Add Cultural Fit Assessment','escape' => false));",
+                        "this->Html->link('',array('plugin' => 'das','controller' => 'core_themes','action' => 'edit_theme'),array('class' => 'deleteIcon deleteDa isDeleted','title' => 'Delete Cultural Theme',",
+                        "this->Html->link('',array('plugin' => 'das','controller' => 'core_themes','action' => 'edit',$culturalAssessment['CoreThemesOrganisationsProduct']['id']),array('class' => 'editIcon','title' => 'Edit Cultural theme'));",
+                        "this->Html->link('',array('plugin' => 'organisations','controller' => 'product_behavior_parameters','action' => 'edit'),array('class' => 'editIcon','title' => 'Edit Cultural Fit Assessment'));"
+                    ],
+                    "title":["Add Cultural Fit Assessment", "Delete Cultural Theme", "Delete Cultural Theme",
+                             "Edit Cultural theme", "Edit Cultural Fit Assessment", "Done With Editing"],
+                    "submit":["Done With Editing"],
+                    "alert_messages":["'There is only one cultural theme,You not able to delete'"],
+                    "labels":["Critical theme"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Add new Theme',true),array('plugin' => 'das','controller' => 'core_themes','action' => 'add'),array('class' => 'btn btnThin checkCandidateStatus','title' => 'Add new theme','escape' => false));",
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => '')) . 'Edit Assessment',true),array('plugin' => 'das','controller' => 'core_themes','action' => 'edit_theme'),array('class' => 'btn btnThin checkCandidateStatus','title' => 'Edit Assessment','escape' => false));"
+                    ],
+                    "title":["Add new theme", "Edit Assessment"],
+                    "alert_messages":[
+                        "'You can not edit this CFA as there are active users, please try again after sometime'"],
+                    "labels":[" Critical theme        "]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "preview.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Add Development Areas',true),array('plugin' => 'das','controller' => 'daOrganisationsProducts','action' => 'add'),array('class' => 'btn btnThin','title' => 'Add development area','escape' => false));",
+                        "this->Html->link('',array('plugin' => 'das','controller' => 'coreThemesOrganisationsProducts','action' => 'edit'),array('class' => 'editIcon','title' => 'Edit development area'));",
+                        "this->Html->link('',array('plugin' => 'das','controller' => 'coreThemesOrganisationsProducts','action' => 'delete',$category['DaOrganisationsProduct']['id']),array('class' => 'deleteIcon','title' => 'Delete development area'),__('Are you sure you want to delete development area?'));",
+                        "this->Html->link('Done',array('plugin' => 'das','controller' => 'da_organisations_products','action' => 'index'),array('class' => 'btn btnBlack marginBottom20','title' => 'Done'));"
+                    ],
+                    "title":["Add development area", "Edit development area", "Delete development area", "Done"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "select.ctp":{
+                    "place_holders":["Alias Name"],
+                    "title":["Done"],
+                    "submit":["Next"],
+                    "labels":[
+                        "        Form->checkbox('CoreThemesOrganisationsProduct.' . $key . '.core_theme_id',array('value' => $coreTheme['id'],'class' => 'CoreThemeCheckbox','data-id' => $coreTheme['id'],'id' => 'CoreThemeCheckbox_' . $coreTheme['id'],'type' => 'checkbox','hiddenField' => false));        echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.product_id',array('value' => $productId));        echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.organisation_id',array('value' => $organisationId));        echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.name',array('value' => $coreTheme['name']));        ?>            "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "set_assessment_score.ctp":{
+                    "title":["Done"],
+                    "submit":["Done"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CoreThemes":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($coreTheme['Category']['name'],array('controller' => 'categories','action' => 'view',$coreTheme['Category']['id'])); ?>",
+                        "this->Html->link(__('Edit Core Theme'),array('action' => 'edit',$coreTheme['CoreTheme']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Core Themes'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Core Theme'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Categories'),array('controller' => 'categories','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Category'),array('controller' => 'categories','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Crpt Ct Questions'),array('controller' => 'crpt_ct_questions','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Crpt Ct Question'),array('controller' => 'crpt_ct_questions','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Crpt Questions'),array('controller' => 'crpt_questions','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Crpt Question'),array('controller' => 'crpt_questions','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Core Themes Organisations Products'),array('controller' => 'core_themes_organisations_products','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Core Themes Organisations Product'),array('controller' => 'core_themes_organisations_products','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'crpt_ct_questions','action' => 'view',$crptCtQuestion['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'crpt_ct_questions','action' => 'edit',$crptCtQuestion['id'])); ?>",
+                        "this->Html->link(__('New Crpt Ct Question'),array('controller' => 'crpt_ct_questions','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'crpt_questions','action' => 'view',$crptQuestion['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'crpt_questions','action' => 'edit',$crptQuestion['id'])); ?>",
+                        "this->Html->link(__('New Crpt Question'),array('controller' => 'crpt_questions','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'core_themes_organisations_products','action' => 'view',$coreThemesOrganisationsProduct['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'core_themes_organisations_products','action' => 'edit',$coreThemesOrganisationsProduct['id'])); ?>",
+                        "this->Html->link(__('New Core Themes Organisations Product'),array('controller' => 'core_themes_organisations_products','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "CrptQuestions":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CrptQuestions":{
+                "add.ctp":{
+                    "place_holders":["Alias Name"],
+                    "link":[
+                        "this->Html->link(_('Reverse Scores'),'javascript:void(0);',array('title' => 'Click here to reverse the score','class' => 'btn reverseScore','div' => false));"
+                    ],
+                    "title":["Click here to reverse the score", "Done"],
+                    "submit":["Save ", "Done"],
+                    "alert_messages":["\"Maximum limit reached\"", "'Select Questions to all the themes'"],
+                    "labels":[
+                        "    Form->checkbox('CoreThemesOrganisationsProduct.' . $key . '.is_critical',array('id' => $key,'div' => false));echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.pass_score',array('value' => '10'));    echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.id',array('value' => $coreTheme['core_themes_organisations_product_id']))    ?>    This is a Critical theme",
+                        "    "]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CrptQuestions":{
+                "edit.ctp":{
+                    "link":["this->Html->link(__('List Crpt Questions'),array('action' => 'index')); ?><\/li>",
+                            "this->Html->link(__('List Core Themes'),array('controller' => 'core_themes','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Core Theme'),array('controller' => 'core_themes','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CrptQuestions":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link($crptQuestion['CoreTheme']['name'],array('controller' => 'core_themes','action' => 'view',$crptQuestion['CoreTheme']['id'])); ?>",
+                        "this->Html->link(__('View'),array('action' => 'view',$crptQuestion['CrptQuestion']['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('action' => 'edit',$crptQuestion['CrptQuestion']['id'])); ?>",
+                        "this->Html->link(__('New Crpt Question'),array('action' => 'add')); ?><\/li>",
+                        "this->Html->link(__('List Core Themes'),array('controller' => 'core_themes','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Core Theme'),array('controller' => 'core_themes','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CrptQuestions":{
+                "select.ctp":{
+                    "place_holders":["Alias Name"],
+                    "link":[
+                        "this->Html->link(__('Reverse Scores'),'javascript:void(0);',array('title' => 'Click here to reverse the score','class' => 'btn reverseScore','div' => false));",
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage3  fancybox_link'));"
+                    ],
+                    "title":["Click here to reverse the score"],
+                    "submit":["Set Score", "Save "],
+                    "alert_messages":["\"Maximum limit reached\"",
+                                      "'Select ' + noOfQuestionsPerTheme + ' Questions for each theme'",
+                                      "'Please Correct the scoring error'"],
+                    "labels":[
+                        "        Form->checkbox('CoreThemesOrganisationsProduct.' . $key . '.is_critical',array('id' => $key,'div' => false,'class' => 'isCritical','data-id' => $coreTheme['core_themes_organisations_product_id'],'checked' => $coreTheme['is_critical']));\n    echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.id',array('value' => $coreTheme['core_themes_organisations_product_id']),array('class' => 'ctOrgProductId'));    echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.min_pass_score',array('value' => '','id' => 'minPassScore'));    echo $this->Form->hidden('CoreThemesOrganisationsProduct.' . $key . '.max_pass_score',array('value' => '','id' => 'maxPassScore'));\n    ?>        Critical theme    ",
+                        "            ",
+                        "            Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 60)); ?>        Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Das\/View\/CrptQuestions":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($crptQuestion['CoreTheme']['name'],array('controller' => 'core_themes','action' => 'view',$crptQuestion['CoreTheme']['id'])); ?>",
+                        "this->Html->link(__('Edit Crpt Question'),array('action' => 'edit',$crptQuestion['CrptQuestion']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Crpt Questions'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Crpt Question'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Core Themes'),array('controller' => 'core_themes','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Core Theme'),array('controller' => 'core_themes','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "Helper":[
+        []
+    ]
+}, "JobRoles":{
+    "Assessments":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/Assessments":{
+                "index.ctp":{
+                    "labels":["Name", "Email"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/Assessments":{
+                "live_test.ctp":{
+                    "labels":["Name", "Email"]
+                }
+            }
+        }
+    ],
+    "Elements":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/Elements":{
+                "job_roles_candidates_list.ctp":{
+                    "alert_messages":["'Unable to send email to anonymous candidate'"],
+                    "link":[
+                        "this->Html->link(__(''),array('plugin' => 'crpts','controller' => 'reports','action' => 'job_role_candidate',$candidate['VJobRolesCandidate']['id']),array('title' => 'Click here to view report'))?>",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'msgBtn'))),$sendEmailLink,array('escape' => false,'class' => $sendMailClass,'title' => 'Click here to send email'));"
+                    ],
+                    "title":["Click here to view report", "Click here to send email"]
+                }
+            }
+        }
+    ],
+    "Helper":[
+        []
+    ],
+    "JobRoles":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "add.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'index',$organisationId),array('class' => 'backBtn','title' => 'Back','escape' => false));",
+                        "this->Html->link('Reset Date','javascript:void(0)',array('class' => 'resetDate','title' => 'Reset Date'));"
+                    ],
+                    "title":["Back", "Select Date", "Reset Date", "Save and Move to Next Step"],
+                    "labels":["Job Role Title *", "*    ", "Expiry Date",
+                              "\n                Form->checkbox('questions_per_page',array('id' => 'question_per_page','div' => false,));\n                ?>\n                Choose five questions per page\n            ",
+                              "\n                Form->checkbox('can_show_demographic_page',array('id' => 'can_show_demographic_page','div' => false,));\n                ?>\n                Enable demographics page\n            ",
+                              "\n                Form->checkbox('is_anonymous_candidate_allowed',array('id' => 'is_anonymous_candidate_allowed','div' => false,));\n                ?>\n                Allow Anonymous Candidates\n            ",
+                              "\n                Form->checkbox('can_tab_be_closed',array('id' => 'can_tab_be_closed','div' => false,));\n                ?>\n                Close the browser tab on clicking the button after assessment is completed\n            ",
+                              "\n                Form->checkbox('can_show_country_list',array('id' => 'can_show_country_list','div' => false,));\n                ?>\n                Show country list to a candidate\n            "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "add_assessments.ctp":{
+                    "title":["Save"],
+                    "labels":["Select CFA", "Select RPA*",
+                              "   Form->checkbox('passing_cfa_mandatory',array('label' => false,'div' => false,'disabled' => 'true','name' => 'passing_cfa_mandatory','id' => 'cfaMandatory','checked' => isset($jrAssessmentCfa['JobRoleAssessment']['passing_cfa_mandatory']) && ($jrAssessmentCfa['JobRoleAssessment']['passing_cfa_mandatory'] == 1) ? true : false));?>Select to choose passing CFA is compulsory to take RPA\n                "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "edit.ctp":{
+                    "place_holders":["Tom"],
+                    "title":["Select Date", "Reset Date", "Save", "Cancel"],
+                    "link":[
+                        "this->Html->link('Reset Date','javascript:void(0)',array('class' => 'resetDate','title' => 'Reset Date'));",
+                        "this->Html->link('Cancel',array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'index'),array('class' => 'back','title' => 'Cancel','id' => 'cancelBtn'));"
+                    ],
+                    "labels":["Job Role Title*", "*    ", "Expiry Date",
+                              "\n                Form->checkbox('questions_per_page',array('id' => 'question_per_page','div' => false,\n\n                ));\n                ?>\n                Choose five questions per page\n            ",
+                              "\n                Form->checkbox('can_show_demographic_page',array('id' => 'can_show_demographic_page','div' => false,\n\n                ));\n                ?>\n                Enable demographics page\n            ",
+                              "\n                Form->checkbox('is_anonymous_candidate_allowed',array('id' => 'is_anonymous_candidate_allowed','div' => false,));\n                ?>\n                Allow Anonymous Candidates\n            ",
+                              "\n                Form->checkbox('can_tab_be_closed',array('id' => 'can_tab_be_closed','div' => false,));\n                ?>\n                Close the browser tab on clicking the button after assessment is completed\n            ",
+                              "\n                Form->checkbox('can_show_country_list',array('id' => 'can_show_country_list','div' => false,));\n                ?>\n                Show country list to a candidate\n            "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "edit_job_role.ctp":{
+                    "title":["Save"],
+                    "labels":["Select CFA", "Select RPA *",
+                              "Form->checkbox('passing_cfa_mandatory',array('label' => false,'div' => false,'disabled' => $status,'name' => 'passing_cfa_mandatory','id' => 'cfaMandatory','checked' => $checkedStatus\n));?>Select to choose passing CFA is compulsory to take RPA\n                "
+                    ]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Create Job Role',true),array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'add'),array('title' => 'Add New','class' => 'btn btnThin','escape' => false));",
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Create Job Role',true),'#',array('title' => 'Add New','class' => 'btn btnThin','escape' => false,'disabled' => 'disabled'));",
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'icon-wrench')) . 'Manage CMS',array('plugin' => 'cms','controller' => 'instructions','action' => 'edit_assessment_pages','welcome_page',$jobRole['JobRole']['id'],2),array('class' => 'manageCMSLink','escape' => false));",
+                        "this->Html->link(__('Click Here to Complete'),array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'add_assessments',$jobRole['JobRole']['id']),array('class' => 'btn'));",
+                        "this->Html->link(__('Click Here to Complete'),'#',array('class' => 'btn','disabled' => 'disabled'));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'viewBtn'))),array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'view',$jobRole['JobRole']['id']),array('title' => 'View Job Role','escape' => false,));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'editBtn editJobRole'))),array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'edit',$jobRole['JobRole']['id']),array('title' => 'Edit Job Role','escape' => false,));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'deleteBtn deleteJobRole'))),array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'delete',$jobRole['JobRole']['id']),array('title' => 'Delete Assessment','escape' => false,'class' => 'checkCandidateStatus','data-id' => $jobRole['JobRole']['id']));"
+                    ],
+                    "title":["Add New", "Add New", "View Job Role", "Edit Job Role", "Delete Assessment"],
+                    "place_holders":["Search"],
+                    "alert_messages":[
+                        "'You can not delete this Job Role as there are active users, please try again after sometime'",
+                        "'Are you sure you want to delete this Job Role'"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "job_roles_list.ctp":{
+                    "link":[
+                        "this->Html->link('Start',array('plugin'=>'users','controller'=>'candidates','action'=>'add',$jobRole['RpaAssessment']['hash'])); *\/?>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "select_behaviours.ctp":{
+                    "submit":["Save and Exit", "Next"],
+                    "labels":[
+                        "        Form->checkbox('RpaBehaviour.' . $key . '.da_organisations_product_id',array('value' => $da['DaOrganisationsProduct']['id'],'id' => 'RpaBehaviour' . $key . 'da_organisations_product_id','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key,'checked' => $da['DaOrganisationsProduct']['selected']));    if ($da['DaOrganisationsProduct']['primary_id'] != 0) {        echo $this->Form->hidden('RpaBehaviour.' . $key . '.id',array('value' => $da['DaOrganisationsProduct']['primary_id']));        }    ?>            "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "set_scenarios.ctp":{
+                    "submit":["Save and Exit", "Done"],
+                    "alert_messages":["'Please select at least one scenario per behaviour'"],
+                    "labels":[
+                        "Form->input('Dummy.select_all',array('type' => 'checkbox','class' => 'selectAll','id' => $categoryAndScenario['Category']['id'],'hiddenField' => false,'div' => false,'label' => false,));?>\n        Select All        ",
+                        "            Form->hidden('RpaScenario.' . $count . '.rpa_behaviour_id',array('value' => $categoryAndScenario['RpaBehaviour']['rpa_behaviour_id'],));                    echo $this->Form->checkbox('RpaScenario.' . $count . '.scenario_id',array('value' => $scenario['id'],'class' => 'scenarioCheckboxes scenarioCheckbox' . $categoryAndScenario['Category']['id'],'data-id' => $categoryAndScenario['Category']['id']));echo $this->Html->tag('span',$scenario['title']);                    ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/JobRoles":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'icon-wrench iconManageCMS')),true),array('plugin' => 'cms','controller' => 'instructions','action' => 'edit_assessment_pages','welcome_page',$jobRoleDetails['JobRole']['id'],2),array('title' => 'Manage CMS','escape' => false,'class' => 'btn'));",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'editBtn')),true),array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'edit',isset($jobRoleDetails['JobRole']['id']) ? $jobRoleDetails['JobRole']['id'] : ''),array('title' => 'Edit Assessment','escape' => false,'class' => 'btn'));",
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'index'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Manage CMS", "Edit Assessment", "Delete Assessment", "Back"],
+                    "place_holders":["Start Date", "End Date", "Search"],
+                    "labels":[" :"]
+                }
+            }
+        }
+    ],
+    "RpaAssessments":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "add.ctp":{
+                    "link":["this->Html->link(__('List Rpa Assessments'),array('action' => 'index')); ?><\/li>",
+                            "this->Html->link(__('List Job Roles'),array('controller' => 'job_roles','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Job Role'),array('controller' => 'job_roles','action' => 'add')); ?> <\/li>",
+                            "this->Html->link(__('List Rpa Behaviours'),array('controller' => 'rpa_behaviours','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Rpa Behaviour'),array('controller' => 'rpa_behaviours','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "add_response_tags.ctp":{
+                    "place_holders":["Enter alias to the scenario", "Enter alias to the response"],
+                    "link":[
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage fancybox_link'));"
+                    ],
+                    "submit":["Save "],
+                    "alert_messages":["'Response Tag is not allocated to one of the response'"],
+                    "labels":[
+                        "        Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 69)); ?>    Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','checked' => $checked,'value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));    ?>    "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "edit.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'New Behaviours to RPA',true),array('plugin' => 'job_roles','controller' => 'rpa_assessments','action' => 'add_more_behaviours',$rpaAssessmentId),array('class' => 'btn btnThin','title' => 'Add New Behaviour','escape' => false));",
+                        "this->Html->link('',$jobRoleLink,$jobRoleAttr);", "this->Html->link('',",
+                        "this->Html->link('',array('plugin' => 'job_roles','controller' => 'rpa_assessments','action' => 'edit_response_tags',$behaviour['RpaBehaviour']['id']),array('class' => 'editIcon','title' => 'Edit Behaviour'));",
+                        "this->Html->link('Done With Editing',$link,array('class' => 'btnBlack noSpace btn pull-right','title' => 'Done With Editing',\"id\" => \"completeEditing\"));"
+                    ],
+                    "title":["Add New Behaviour", "Edit Behaviour", "Delete Behaviour", "Delete Behaviour",
+                             "Edit Behaviour", "Done With Editing"],
+                    "alert_messages":["'\" . $message . \"'", "'There is only one core the,You not able to delete'"],
+                    "labels":["Critical"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "edit_response_tags.ctp":{
+                    "place_holders":["Enter alias to the scenario", "Enter alias to the response"],
+                    "link":[
+                        "this->Html->link('Select Image','#imagePopUpBox',array('class' => 'pull-right btn smlBtn selectImage fancybox_link'));"
+                    ],
+                    "submit":["Save "],
+                    "alert_messages":["'Response Tag is not allocated to one of the response'"],
+                    "labels":[
+                        "    Html->image($organisationPath . '\/questions\/148X50\/' . $imageName['AssessmentImage']['image'],array('width' => 150,'height' => 69)); ?>    Form->checkbox('imgChkBox_' . $key,array('class' => 'pull-right imageChkBox','checked' => $checked,'value' => $imageName['AssessmentImage']['id'],'hiddenField' => false));        ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "get_rpa_data.ctp":{
+                    "title":["Done"]
+                }
+            }
+        },
+        [],
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link($rpaAssessment['JobRole']['name'],array('controller' => 'job_roles','action' => 'view',$rpaAssessment['JobRole']['id'])); ?>",
+                        "this->Html->link(__('View'),array('action' => 'view',$rpaAssessment['RpaAssessment']['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('action' => 'edit',$rpaAssessment['RpaAssessment']['id'])); ?>",
+                        "this->Html->link(__('New Rpa Assessment'),array('action' => 'add')); ?><\/li>",
+                        "this->Html->link(__('List Job Roles'),array('controller' => 'job_roles','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Job Role'),array('controller' => 'job_roles','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Behaviours'),array('controller' => 'rpa_behaviours','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Behaviour'),array('controller' => 'rpa_behaviours','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "select_behaviours.ctp":{
+                    "submit":["Save and Exit", "Next"],
+                    "labels":[
+                        "        Form->checkbox('RpaBehaviour.' . $key . '.da_organisations_product_id',array('value' => $da['DaOrganisationsProduct']['id'],'id' => 'RpaBehaviour' . $key . 'da_organisations_product_id','class' => 'daCheckBox','data-id' => $key,'data-id-div' => $key,'checked' => $da['DaOrganisationsProduct']['selected']));    if ($da['DaOrganisationsProduct']['primary_id'] != 0) {        echo $this->Form->hidden('RpaBehaviour.' . $key . '.id',array('value' => $da['DaOrganisationsProduct']['primary_id']));        }    ?>            "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "set_rpa_score.ctp":{
+                    "place_holders":["Retake Days", "Button title"],
+                    "title":["Done"],
+                    "submit":["Done"],
+                    "alert_messages":["'Retake days should be numeric and less than 365 days'", "'Enter a valid url'"],
+                    "labels":[
+                        "Enter the time period after which the candidate can retake this assessment (in days)\n            *",
+                        "Button Title *", "Url *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "set_scenarios.ctp":{
+                    "submit":["Save and Exit", "Next"],
+                    "alert_messages":["'Please select at least one scenario per behaviour'"],
+                    "labels":[
+                        "        Form->hidden('RpaBehaviour.' . $keyBehaviours . '.id',array('value' => $categoryAndScenario['RpaBehaviour']['rpa_behaviour_id']));        echo $this->Form->checkbox('RpaBehaviour.' . $keyBehaviours . '.is_critical',array('checked' => $categoryAndScenario['RpaBehaviour']['is_critical']));        ?>          Critical Behaviour    ",
+                        "Form->input('Dummy.select_all',array('type' => 'checkbox','class' => 'selectAll','id' => $categoryAndScenario['Category']['id'],'hiddenField' => false,'div' => false,'label' => false,));?>\n        Select All        ",
+                        "            Form->hidden('RpaScenario.' . $count . '.rpa_behaviour_id',array('value' => $categoryAndScenario['RpaBehaviour']['rpa_behaviour_id'],));                    echo $this->Form->checkbox('RpaScenario.' . $count . '.scenario_id',array('value' => $scenario['id'],'class' => 'scenarioCheckboxes scenarioCheckbox' . $categoryAndScenario['Category']['id'],'data-id' => $categoryAndScenario['Category']['id'],'checked' => $scenario['selected']));            if ($scenario['primary_id'] != 0) {                echo $this->Form->hidden('RpaScenario.' . $count . '.id',array('value' => $scenario['primary_id']));            }                    echo $this->Html->tag('span',$scenario['title']);                    ?>        "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/RpaAssessments":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($rpaAssessment['JobRole']['name'],array('controller' => 'job_roles','action' => 'view',$rpaAssessment['JobRole']['id'])); ?>",
+                        "this->Html->link(__('Edit Rpa Assessment'),array('action' => 'edit',$rpaAssessment['RpaAssessment']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Assessments'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Assessment'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Job Roles'),array('controller' => 'job_roles','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Job Role'),array('controller' => 'job_roles','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Rpa Behaviours'),array('controller' => 'rpa_behaviours','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Rpa Behaviour'),array('controller' => 'rpa_behaviours','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'rpa_behaviours','action' => 'view',$rpaBehaviour['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'rpa_behaviours','action' => 'edit',$rpaBehaviour['id'])); ?>",
+                        "this->Html->link(__('New Rpa Behaviour'),array('controller' => 'rpa_behaviours','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "Users":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/Users":{
+                "edit.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'products','controller' => 'products_users','action' => 'dashboard'),array('class' => 'backBtn','title' => 'Back','escape' => false,'id' => 'editUser'));"
+                    ],
+                    "title":["Back"],
+                    "labels":["Profile Image", "Change Image", "First Name", "Last Name", "Employee ID",
+                              "Employee Email ID", "Job Title", "Reporting Manager"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/JobRoles\/View\/Users":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back','',array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back"],
+                    "labels":["    ", "Email Id :", "Employee Id :",
+                              "Reporting Manager :"]
+                }
+            }
+        }
+    ]
+}, "Levels":{
+    "Helper":[
+        []
+    ]
+}, "Organisations":{
+    "Helper":[
+        []
+    ],
+    "ProductBehaviorParameters":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Organisations\/View\/ProductBehaviorParameters":{
+                "add.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "alert_messages":[
+                        "\"You can't select these response and question count, as scale can't be formed based on that\""
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Organisations\/View\/ProductBehaviorParameters":{
+                "edit.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"],
+                    "alert_messages":[
+                        "\"You can't select these response and question count, as scale can't be formed based on that\""
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Organisations\/View\/ProductBehaviorParameters":{
+                "get_question_responses.ctp":{
+                    "place_holders":["Alias Name"],
+                    "submit":["Next"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Organisations\/View\/ProductBehaviorParameters":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link($productBehaviorParameter['Product']['name'],array('controller' => 'products','action' => 'view',$productBehaviorParameter['Product']['id'])); ?>",
+                        "this->Html->link($productBehaviorParameter['Organisation']['name'],array('controller' => 'organisations','action' => 'view',$productBehaviorParameter['Organisation']['id'])); ?>",
+                        "this->Html->link(__('View'),array('action' => 'view',$productBehaviorParameter['ProductBehaviorParameter']['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('action' => 'edit',$productBehaviorParameter['ProductBehaviorParameter']['id'])); ?>",
+                        "this->Html->link(__('New Product Behavior Parameter'),array('action' => 'add')); ?><\/li>",
+                        "this->Html->link(__('List Products'),array('controller' => 'products','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Product'),array('controller' => 'products','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Organisations'),array('controller' => 'organisations','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Organisation'),array('controller' => 'organisations','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Product Behavior Responses'),array('controller' => 'product_behavior_responses','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Product Behavior Response'),array('controller' => 'product_behavior_responses','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Organisations\/View\/ProductBehaviorParameters":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($productBehaviorParameter['Product']['name'],array('controller' => 'products','action' => 'view',$productBehaviorParameter['Product']['id'])); ?>",
+                        "this->Html->link($productBehaviorParameter['Organisation']['name'],array('controller' => 'organisations','action' => 'view',$productBehaviorParameter['Organisation']['id'])); ?>",
+                        "this->Html->link(__('Edit Product Behavior Parameter'),array('action' => 'edit',$productBehaviorParameter['ProductBehaviorParameter']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Product Behavior Parameters'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Product Behavior Parameter'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Products'),array('controller' => 'products','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Product'),array('controller' => 'products','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Organisations'),array('controller' => 'organisations','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Organisation'),array('controller' => 'organisations','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Product Behavior Responses'),array('controller' => 'product_behavior_responses','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Product Behavior Response'),array('controller' => 'product_behavior_responses','action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('View'),array('controller' => 'product_behavior_responses','action' => 'view',$productBehaviorResponse['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('controller' => 'product_behavior_responses','action' => 'edit',$productBehaviorResponse['id'])); ?>",
+                        "this->Html->link(__('New Product Behavior Response'),array('controller' => 'product_behavior_responses','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ]
+}, "Products":{
+    "Elements":[
+        [],
+        []
+    ],
+    "Emails":[
+        []
+    ],
+    "Helper":[
+        []
+    ],
+    "ProductThemes":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductThemes":{
+                "button_settings.ctp":{
+                    "title":["Apply"],
+                    "labels":["Button Color:", "Text Color:"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductThemes":{
+                "edit.ctp":{
+                    "title":["Apply"],
+                    "labels":["Header Color:", "Tagline Color:", "Tagline Text:", "Footer Color:", "Text Colour:",
+                              "Footer Text:"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductThemes":{
+                "font_settings.ctp":{
+                    "link":["this->Html->link('Helvaitca',\"#\",array('data-id' => 'Helvaitca'));",
+                            "this->Html->link('Arial',\"#\",array('data-id' => 'Arial'));",
+                            "this->Html->link('Times new roman',\"#\",array('data-id' => 'Times new roman'));",
+                            "this->Html->link('Georgia',\"#\",array('data-id' => 'Georgia',));"],
+                    "title":["Apply"],
+                    "labels":["Font:"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductThemes":{
+                "parameters_n_setting_access_option.ctp":{
+                    "title":["Apply"],
+                    "labels":["Enable Colour combinations for text container?",
+                              "Enable \u00e2\u0080\u009cHaving difficulty in reading text\u00e2\u0080\u009d button?",
+                              "Enable Screen reader?", "Enable horizontal line in the header?"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductThemes":{
+                "parameters_n_setting_logo_upload.ctp":{
+                    "title":["Apply"],
+                    "alert_messages":["responseJSON.response_msg.toString(", "responseJSON.response_msg.toString(",
+                                      "responseJSON.response_msg.toString("]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductThemes":{
+                "save_assessment_image.ctp":{
+                    "alert_messages":["responseJSON.response_msg.toString(", "data.errorMsg"]
+                }
+            }
+        }
+    ],
+    "ProductsUsers":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductsUsers":{
+                "admins.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'plusiconWhite')) . 'Add Product Admins',true),array('plugin' => 'products','controller' => 'products_users','action' => 'assign','pa',$productId,$organisationId),array('title' => 'Add Product Admins','class' => 'btn btnThin','escape' => false));",
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'products','controller' => 'products_users','action' => 'dashboard'),array('class' => 'backBtn noSpace','title' => 'Back','escape' => false));",
+                        "this->Html->link(__($this->Html->tag('span ','',array('class' => $class)) . '',true),array('plugin' => 'products','controller' => 'products_users','action' => 'status',$user['ProductsUser']['id'],$user['ProductsUser']['is_active']),array('title' => $message,'escape' => false),'Are you sure to ' . $alert . ' ' . $user['ProductsUser']['is_psa'] . $user['User']['first_name'] . \" \" . $user['User']['last_name'] . '?');?>",
+                        "this->Html->link(__($this->Html->tag('span','',array('class' => 'viewBtn  adminView'))),array('plugin' => 'products','controller' => 'products_users','action' => 'view_admin_profile',$user['User']['id']),array('title' => 'View Profile','escape' => false));"
+                    ],
+                    "title":["Add Product Admins", "Back", "View Profile"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductsUsers":{
+                "assign_pa.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'products','controller' => 'products_users','action' => 'admins'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back", "Done"],
+                    "labels":[
+                        "\n            Form->checkbox('Dummy.select_all',array('class' => 'selectAll',)) ?>  Select All\n                ",
+                        "    Html->image('products\/User_blank_img.jpg');    } else {        echo $this->Html->image('\/img\/profileImage\/35X35\/' . $userData['User']['image']);    }    ?>\n            \n                Text->truncate($userData['User']['user_title'],15,array('ending' => '','exact' => true));?>\n            Form->checkbox('ProductsUser.' . $count . '.user_id',array('id'          => $userData['User']['id'],'value' => $userData['User']['id'],'class' => 'userChk checkBox', \/\/user class is used ajax call to save or remove the user,                                                           'hiddenField' => false,));$count++?>\n                "
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductsUsers":{
+                "dashboard.ctp":{
+                    "link":[
+                        "this->Html->link(__($this->Html->tag('i','',array('class' => 'addSmallIcon')) . 'Create Job Role',true),array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'add'),array('title' => 'Add New','class' => 'btn btnThin','escape' => false));"
+                    ],
+                    "title":["Add New"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/ProductsUsers":{
+                "view_admin_profile.ctp":{
+                    "link":[
+                        "this->Html->link($this->Html->tag('i','',array('class' => 'backBtnIcon')) . 'Back',array('plugin' => 'products','controller' => 'products','action' => 'admins'),array('class' => 'backBtn','title' => 'Back','escape' => false));"
+                    ],
+                    "title":["Back"],
+                    "labels":["    ", "Employee Name :", "Email Id :", "Job Title :"]
+                }
+            }
+        }
+    ],
+    "Supports":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Products\/View\/Supports":{
+                "configurations.ctp":{
+                    "submit":["Apply the changes"],
+                    "labels":[
+                        "                Form->input('OrganisationsProduct.is_support_enabled',array('options' => array(0 => 'Disable'),'label' => false,'div' => false,'type' => 'radio','class' => 'radioStatus'));?>",
+                        "                Form->input('OrganisationsProduct.is_support_enabled',array('options' => array(1 => 'Enable'),'label' => false,'div' => false,'type' => 'radio','class' => 'radioStatus'));?>",
+                        "Admin email *", "Technical email *"]
+                }
+            }
+        }
+    ]
+}, "Users":{
+    "Candidates":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Candidates":{
+                "add.ctp":{
+                    "place_holders":["Tom"],
+                    "title":["Take the assessment"],
+                    "labels":["Name\n                *\n            ", "Email\n                *\n            "]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Candidates":{
+                "email_candidate.ctp":{
+                    "title":["Send Email"],
+                    "labels":["To:", "Subject:*", "", ""]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Candidates":{
+                "instructions.ctp":{
+                    "link":[
+                        "this->Html->link('Take the assessment',array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'cfa',),array('class' => 'btn btnBlack pull-right'))"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Candidates":{
+                "rpa_instructions.ctp":{
+                    "link":[
+                        "this->Html->link('Take the assessment',array('plugin' => 'job_roles','controller' => 'job_roles','action' => 'rpa',),array('class' => 'btn btnBlack pull-right'))"
+                    ]
+                }
+            }
+        },
+        []
+    ],
+    "Emails":[
+        []
+    ],
+    "Helper":[
+        []
+    ],
+    "Users":[
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "add.ctp":{
+                    "link":["this->Html->link(__('List Users'),array('action' => 'index')); ?><\/li>",
+                            "this->Html->link(__('List Organisations'),array('controller' => 'organisations','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Organisation'),array('controller' => 'organisations','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "change_password.ctp":{
+                    "title":["Save", "Cancel"],
+                    "submit":["Save"],
+                    "link":[
+                        "this->Html->link('Cancel','javascript:history.go(-1);',array('class' => 'back','title' => 'Cancel'));"
+                    ],
+                    "labels":["Old Password * ", "New Password *", "Confirm Password *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "edit.ctp":{
+                    "link":["this->Html->link(__('List Users'),array('action' => 'index')); ?><\/li>",
+                            "this->Html->link(__('List Organisations'),array('controller' => 'organisations','action' => 'index')); ?> <\/li>",
+                            "this->Html->link(__('New Organisation'),array('controller' => 'organisations','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "forgot_password.ctp":{
+                    "link":[
+                        "this->Html->link('Cancel',array('plugin' => 'users','controller' => 'users','action' => 'login'),array('class' => 'back'));"
+                    ],
+                    "labels":["Email*"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "index.ctp":{
+                    "link":[
+                        "this->Html->link($user['Organisation']['name'],array('controller' => 'organisations','action' => 'view',$user['Organisation']['id'])); ?>",
+                        "this->Html->link(__('View'),array('action' => 'view',$user['User']['id'])); ?>",
+                        "this->Html->link(__('Edit'),array('action' => 'edit',$user['User']['id'])); ?>",
+                        "this->Html->link(__('New User'),array('action' => 'add')); ?><\/li>",
+                        "this->Html->link(__('List Organisations'),array('controller' => 'organisations','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Organisation'),array('controller' => 'organisations','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "login.ctp":{
+                    "place_holders":["Email", "Password"],
+                    "submit":["Login"],
+                    "link":[
+                        "this->Html->link(('Forgot your password'),array('plugin' => 'users','controller' => 'users','action' => 'forgot_password'),array('class' => 'forgotText'))?>"
+                    ]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "product_set_password.ctp":{
+                    "place_holders":["Enter Your New Password", "Confirm Your New Password"],
+                    "link":[
+                        "this->Html->link('Terms of Use','#termsOfUse',array('class' => 'fancybox_link')) . ' & ' . $this->Html->link('Privacy Policy','#privacyPolicy',array('class' => 'fancybox_link')),array('id' => 'agreeTermsCond'));"
+                    ],
+                    "submit":["Submit"],
+                    "labels":["New Password *", "Confirm Password *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "set_password.ctp":{
+                    "submit":["Submit"],
+                    "labels":["New Password *", "Confirm Password *"]
+                }
+            }
+        },
+        {
+            "\/home\/weboniselab\/projects\/apps2013\/php\/Crucible-CRT\/app\/Plugin\/Users\/View\/Users":{
+                "view.ctp":{
+                    "link":[
+                        "this->Html->link($user['Organisation']['name'],array('controller' => 'organisations','action' => 'view',$user['Organisation']['id'])); ?>",
+                        "this->Html->link(__('Edit User'),array('action' => 'edit',$user['User']['id'])); ?> <\/li>",
+                        "this->Html->link(__('List Users'),array('action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New User'),array('action' => 'add')); ?> <\/li>",
+                        "this->Html->link(__('List Organisations'),array('controller' => 'organisations','action' => 'index')); ?> <\/li>",
+                        "this->Html->link(__('New Organisation'),array('controller' => 'organisations','action' => 'add')); ?> <\/li>"
+                    ]
+                }
+            }
+        }
+    ],
+    "Userxls":[
+        []
+    ]
+}}

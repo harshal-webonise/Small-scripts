@@ -1,0 +1,2065 @@
+
+===========> Old Actions: 80 <========================Array
+(
+    [0] => Array
+        (
+            [plugin] => activities
+            [controller] => activities
+            [action] => view_all
+        )
+
+    [1] => Array
+        (
+            [plugin] => cms
+            [controller] => instructions
+            [action] => edit
+        )
+
+    [2] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => index
+        )
+
+    [3] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => index
+        )
+
+    [4] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => add
+        )
+
+    [5] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_core_themes
+            [action] => add
+        )
+
+    [6] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => check_title
+        )
+
+    [7] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_core_themes
+            [action] => select
+        )
+
+    [8] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_parameters
+            [action] => add
+        )
+
+    [9] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => get_question_responses
+        )
+
+    [10] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => add
+        )
+
+    [11] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => save_cfa_questions
+        )
+
+    [12] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => continue_cfa
+        )
+
+    [13] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => add
+        )
+
+    [14] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => get_cfa_slider_data
+        )
+
+    [15] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => save_cfa_slider_data
+        )
+
+    [16] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => edit_cfa
+        )
+
+    [17] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => is_candidate_active
+        )
+
+    [18] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_parameters
+            [action] => edit
+        )
+
+    [19] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => edit
+        )
+
+    [20] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => edit
+        )
+
+    [21] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => update
+        )
+
+    [22] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => view
+        )
+
+    [23] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => cfa_candidates_list
+        )
+
+    [24] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => export_advance_xls
+        )
+
+    [25] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => delete
+        )
+
+    [26] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => add_more
+        )
+
+    [27] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => add
+        )
+
+    [28] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => check_title
+        )
+
+    [29] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_behaviours
+            [action] => add
+        )
+
+    [30] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_scenarios
+            [action] => add
+        )
+
+    [31] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_responses
+            [action] => add
+        )
+
+    [32] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => set_score
+        )
+
+    [33] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => view
+        )
+
+    [34] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => edit_assessment
+        )
+
+    [35] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_behaviours
+            [action] => add_more
+        )
+
+    [36] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => delete
+        )
+
+    [37] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_behaviours
+            [action] => delete
+        )
+
+    [38] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => get_rpa_data
+        )
+
+    [39] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => is_candidate_active
+        )
+
+    [40] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => edit
+        )
+
+    [41] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_responses
+            [action] => edit
+        )
+
+    [42] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => edit_score
+        )
+
+    [43] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_scenarios
+            [action] => add_more
+        )
+
+    [44] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_responses
+            [action] => add_more
+        )
+
+    [45] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => update_score
+        )
+
+    [46] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => get_rpa_data_for_detail_view
+        )
+
+    [47] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => save_rpa_data
+        )
+
+    [48] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => index
+        )
+
+    [49] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => can_delete
+        )
+
+    [50] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => delete
+        )
+
+    [51] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => add_more_behaviours
+        )
+
+    [52] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => set_response_tags
+        )
+
+    [53] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => can_edit
+        )
+
+    [54] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => edit
+        )
+
+    [55] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => edit_response_tags
+        )
+
+    [56] => Array
+        (
+            [plugin] => email_templates
+            [controller] => email_templates
+            [action] => edit
+        )
+
+    [57] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => add
+        )
+
+    [58] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => check_title
+        )
+
+    [59] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => get_next_level_aliases
+        )
+
+    [60] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => add_assessments
+        )
+
+    [61] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => index
+        )
+
+    [62] => Array
+        (
+            [plugin] => job_roles
+            [controller] => 
+            [action] => 
+        )
+
+    [63] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => view
+        )
+
+    [64] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => edit_job_role
+        )
+
+    [65] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => edit
+        )
+
+    [66] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => delete
+        )
+
+    [67] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => job_roles_candidates_list
+        )
+
+    [68] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => export_advance_xls
+        )
+
+    [69] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => admins
+        )
+
+    [70] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => view_admin_profile
+        )
+
+    [71] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => status
+        )
+
+    [72] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => dashboard
+        )
+
+    [73] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => edit
+        )
+
+    [74] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => save_assessment_image
+        )
+
+    [75] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => cfa_report
+        )
+
+    [76] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_cfa_report
+        )
+
+    [77] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => email_candidate
+        )
+
+    [78] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => report
+        )
+
+    [79] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_pdf_report
+        )
+
+)
+
+
+===========> New Actions: 133 <========================Array
+(
+    [0] => Array
+        (
+            [plugin] => activities
+            [controller] => activities
+            [action] => view_all
+        )
+
+    [1] => Array
+        (
+            [plugin] => activities
+            [controller] => activities
+            [action] => search
+        )
+
+    [2] => Array
+        (
+            [plugin] => activities
+            [controller] => activities
+            [action] => view_all_search_result
+        )
+
+    [3] => Array
+        (
+            [plugin] => cms
+            [controller] => instructions
+            [action] => edit
+        )
+
+    [4] => Array
+        (
+            [plugin] => cms
+            [controller] => instructions
+            [action] => page
+        )
+
+    [5] => Array
+        (
+            [plugin] => cms
+            [controller] => instructions
+            [action] => edit_assessment_pages
+        )
+
+    [6] => Array
+        (
+            [plugin] => cms
+            [controller] => pages
+            [action] => index
+        )
+
+    [7] => Array
+        (
+            [plugin] => cms
+            [controller] => pages
+            [action] => view
+        )
+
+    [8] => Array
+        (
+            [plugin] => cms
+            [controller] => pages
+            [action] => edit
+        )
+
+    [9] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => index
+        )
+
+    [10] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => view
+        )
+
+    [11] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => add
+        )
+
+    [12] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => edit
+        )
+
+    [13] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => delete
+        )
+
+    [14] => Array
+        (
+            [plugin] => email_templates
+            [controller] => email_templates
+            [action] => view
+        )
+
+    [15] => Array
+        (
+            [plugin] => email_templates
+            [controller] => email_templates
+            [action] => edit
+        )
+
+    [16] => Array
+        (
+            [plugin] => email_templates
+            [controller] => email_templates
+            [action] => get_email_template_and_replace_constant
+        )
+
+    [17] => Array
+        (
+            [plugin] => job_roles
+            [controller] => assessments
+            [action] => index
+        )
+
+    [18] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => index
+        )
+
+    [19] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => view
+        )
+
+    [20] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => add
+        )
+
+    [21] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => edit
+        )
+
+    [22] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => delete
+        )
+
+    [23] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles_app
+            [action] => check_candidate_active
+        )
+
+    [24] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => index
+        )
+
+    [25] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => search
+        )
+
+    [26] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => search_by_hierarchy
+        )
+
+    [27] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => view
+        )
+
+    [28] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => add
+        )
+
+    [29] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => add_assessments
+        )
+
+    [30] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => edit
+        )
+
+    [31] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => delete
+        )
+
+    [32] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => check_title
+        )
+
+    [33] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => get_next_level_aliases
+        )
+
+    [34] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => select_behaviours
+        )
+
+    [35] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => set_scenarios
+        )
+
+    [36] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => job_roles_candidates_list
+        )
+
+    [37] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => check_job_role_candidate_present_or_invited
+        )
+
+    [38] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => export_report
+        )
+
+    [39] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => export_advance_xls
+        )
+
+    [40] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => edit_job_role
+        )
+
+    [41] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => export_advance_excel
+        )
+
+    [42] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => index
+        )
+
+    [43] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => view
+        )
+
+    [44] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => add
+        )
+
+    [45] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => edit
+        )
+
+    [46] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => delete
+        )
+
+    [47] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => add_response_tags
+        )
+
+    [48] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => select_behaviours
+        )
+
+    [49] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => set_scenarios
+        )
+
+    [50] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => edit_response_tags
+        )
+
+    [51] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => delete_behaviour
+        )
+
+    [52] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => add_more_behaviours
+        )
+
+    [53] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => set_more_scenarios
+        )
+
+    [54] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => set_rpa_score
+        )
+
+    [55] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => get_rpa_data
+        )
+
+    [56] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => get_rpa_data_for_detail_view
+        )
+
+    [57] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => save_rpa_data
+        )
+
+    [58] => Array
+        (
+            [plugin] => job_roles
+            [controller] => users
+            [action] => view
+        )
+
+    [59] => Array
+        (
+            [plugin] => job_roles
+            [controller] => users
+            [action] => edit
+        )
+
+    [60] => Array
+        (
+            [plugin] => job_roles
+            [controller] => users
+            [action] => image_upload
+        )
+
+    [61] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => index
+        )
+
+    [62] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => view
+        )
+
+    [63] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => format
+        )
+
+    [64] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => change
+        )
+
+    [65] => Array
+        (
+            [plugin] => mail_queues
+            [controller] => mail_queues
+            [action] => test
+        )
+
+    [66] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => index
+        )
+
+    [67] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => view
+        )
+
+    [68] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => add
+        )
+
+    [69] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => edit
+        )
+
+    [70] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => delete
+        )
+
+    [71] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => get_question_responses
+        )
+
+    [72] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => edit
+        )
+
+    [73] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => save_assessment_image
+        )
+
+    [74] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => upload_assessment_image
+        )
+
+    [75] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => delete_assessment_image
+        )
+
+    [76] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => upload_icon
+        )
+
+    [77] => Array
+        (
+            [plugin] => products
+            [controller] => products_app
+            [action] => send_email_to_product_admins
+        )
+
+    [78] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => index
+        )
+
+    [79] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => view
+        )
+
+    [80] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => add
+        )
+
+    [81] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => edit
+        )
+
+    [82] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => delete
+        )
+
+    [83] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => update_instruction_flag
+        )
+
+    [84] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => dashboard
+        )
+
+    [85] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => admins
+        )
+
+    [86] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => assign
+        )
+
+    [87] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => view_admin_profile
+        )
+
+    [88] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => status
+        )
+
+    [89] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => search
+        )
+
+    [90] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_job_roles_and_cfa
+        )
+
+    [91] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_candidate_details
+        )
+
+    [92] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_candidate_stats
+        )
+
+    [93] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_graph_details
+        )
+
+    [94] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_graph
+        )
+
+    [95] => Array
+        (
+            [plugin] => products
+            [controller] => supports
+            [action] => configurations
+        )
+
+    [96] => Array
+        (
+            [plugin] => products
+            [controller] => supports
+            [action] => query
+        )
+
+    [97] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => index
+        )
+
+    [98] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => view
+        )
+
+    [99] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => add
+        )
+
+    [100] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => edit
+        )
+
+    [101] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => delete
+        )
+
+    [102] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => index
+        )
+
+    [103] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => view
+        )
+
+    [104] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => add
+        )
+
+    [105] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => edit
+        )
+
+    [106] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => delete
+        )
+
+    [107] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => email_candidate
+        )
+
+    [108] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_pdf
+        )
+
+    [109] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => set_opaque_back
+        )
+
+    [110] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => set_back_color
+        )
+
+    [111] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => redirect_candidate
+        )
+
+    [112] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => api_take_assessment
+        )
+
+    [113] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => error
+        )
+
+    [114] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => report
+        )
+
+    [115] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_pdf_report
+        )
+
+    [116] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => cfa_report
+        )
+
+    [117] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_cfa_report
+        )
+
+    [118] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => candidate_assessment_check
+        )
+
+    [119] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => details
+        )
+
+    [120] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => login
+        )
+
+    [121] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => logout
+        )
+
+    [122] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => index
+        )
+
+    [123] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => view
+        )
+
+    [124] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => add
+        )
+
+    [125] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => edit
+        )
+
+    [126] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => delete
+        )
+
+    [127] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => product_user_verify
+        )
+
+    [128] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => product_set_password
+        )
+
+    [129] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => forgot_password
+        )
+
+    [130] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => change_password
+        )
+
+    [131] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => set_password
+        )
+
+    [132] => Array
+        (
+            [plugin] => users
+            [controller] => userxls
+            [action] => dummy_users
+        )
+
+)
+
+
+===========> Diff Actions: 108 <========================Array
+(
+    [0] => Array
+        (
+            [plugin] => activities
+            [controller] => activities
+            [action] => view_all
+        )
+
+    [1] => Array
+        (
+            [plugin] => cms
+            [controller] => instructions
+            [action] => edit
+        )
+
+    [2] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => index
+        )
+
+    [3] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => index
+        )
+
+    [4] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => add
+        )
+
+    [5] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_core_themes
+            [action] => add
+        )
+
+    [6] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => check_title
+        )
+
+    [7] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_core_themes
+            [action] => select
+        )
+
+    [8] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_parameters
+            [action] => add
+        )
+
+    [9] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => get_question_responses
+        )
+
+    [10] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => add
+        )
+
+    [11] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => save_cfa_questions
+        )
+
+    [12] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => continue_cfa
+        )
+
+    [13] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => add
+        )
+
+    [14] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => get_cfa_slider_data
+        )
+
+    [15] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => save_cfa_slider_data
+        )
+
+    [16] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => edit_cfa
+        )
+
+    [17] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => is_candidate_active
+        )
+
+    [18] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_parameters
+            [action] => edit
+        )
+
+    [19] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => edit
+        )
+
+    [20] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => edit
+        )
+
+    [21] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_scores
+            [action] => update
+        )
+
+    [22] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => view
+        )
+
+    [23] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => cfa_candidates_list
+        )
+
+    [24] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => export_advance_xls
+        )
+
+    [25] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfas
+            [action] => delete
+        )
+
+    [26] => Array
+        (
+            [plugin] => crpts
+            [controller] => cfa_questions
+            [action] => add_more
+        )
+
+    [27] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => add
+        )
+
+    [28] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => check_title
+        )
+
+    [29] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_behaviours
+            [action] => add
+        )
+
+    [30] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_scenarios
+            [action] => add
+        )
+
+    [31] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_responses
+            [action] => add
+        )
+
+    [32] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => set_score
+        )
+
+    [33] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => view
+        )
+
+    [34] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => edit_assessment
+        )
+
+    [35] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_behaviours
+            [action] => add_more
+        )
+
+    [36] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => delete
+        )
+
+    [37] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_behaviours
+            [action] => delete
+        )
+
+    [38] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => get_rpa_data
+        )
+
+    [39] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => is_candidate_active
+        )
+
+    [40] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => edit
+        )
+
+    [41] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_responses
+            [action] => edit
+        )
+
+    [42] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => edit_score
+        )
+
+    [43] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_scenarios
+            [action] => add_more
+        )
+
+    [44] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpa_responses
+            [action] => add_more
+        )
+
+    [45] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => update_score
+        )
+
+    [46] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => get_rpa_data_for_detail_view
+        )
+
+    [47] => Array
+        (
+            [plugin] => crpts
+            [controller] => rpas
+            [action] => save_rpa_data
+        )
+
+    [48] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => index
+        )
+
+    [49] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => can_delete
+        )
+
+    [50] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => delete
+        )
+
+    [51] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => add_more_behaviours
+        )
+
+    [52] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => set_response_tags
+        )
+
+    [53] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => can_edit
+        )
+
+    [54] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => edit
+        )
+
+    [55] => Array
+        (
+            [plugin] => das
+            [controller] => categories
+            [action] => edit_response_tags
+        )
+
+    [56] => Array
+        (
+            [plugin] => email_templates
+            [controller] => email_templates
+            [action] => edit
+        )
+
+    [57] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => add
+        )
+
+    [58] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => check_title
+        )
+
+    [59] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => get_next_level_aliases
+        )
+
+    [60] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => add_assessments
+        )
+
+    [61] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => index
+        )
+
+    [62] => Array
+        (
+            [plugin] => job_roles
+            [controller] => 
+            [action] => 
+        )
+
+    [63] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => view
+        )
+
+    [64] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => edit_job_role
+        )
+
+    [65] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => edit
+        )
+
+    [66] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => delete
+        )
+
+    [67] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => job_roles_candidates_list
+        )
+
+    [68] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => export_advance_xls
+        )
+
+    [69] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => admins
+        )
+
+    [70] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => view_admin_profile
+        )
+
+    [71] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => status
+        )
+
+    [72] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => dashboard
+        )
+
+    [73] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => edit
+        )
+
+    [74] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => save_assessment_image
+        )
+
+    [75] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => cfa_report
+        )
+
+    [76] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_cfa_report
+        )
+
+    [77] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => email_candidate
+        )
+
+    [78] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => report
+        )
+
+    [79] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_pdf_report
+        )
+
+)

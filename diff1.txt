@@ -1,0 +1,764 @@
+
+===========> Old Actions: 80 <========================
+
+===========> New Actions: 133 <========================
+
+===========> Diff Actions: 108 <========================Array
+(
+    [0] => Array
+        (
+            [plugin] => activities
+            [controller] => activities
+            [action] => search
+        )
+
+    [1] => Array
+        (
+            [plugin] => activities
+            [controller] => activities
+            [action] => view_all_search_result
+        )
+
+    [2] => Array
+        (
+            [plugin] => cms
+            [controller] => instructions
+            [action] => page
+        )
+
+    [3] => Array
+        (
+            [plugin] => cms
+            [controller] => instructions
+            [action] => edit_assessment_pages
+        )
+
+    [4] => Array
+        (
+            [plugin] => cms
+            [controller] => pages
+            [action] => index
+        )
+
+    [5] => Array
+        (
+            [plugin] => cms
+            [controller] => pages
+            [action] => view
+        )
+
+    [6] => Array
+        (
+            [plugin] => cms
+            [controller] => pages
+            [action] => edit
+        )
+
+    [7] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => index
+        )
+
+    [8] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => view
+        )
+
+    [9] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => add
+        )
+
+    [10] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => edit
+        )
+
+    [11] => Array
+        (
+            [plugin] => cms
+            [controller] => settings
+            [action] => delete
+        )
+
+    [12] => Array
+        (
+            [plugin] => email_templates
+            [controller] => email_templates
+            [action] => view
+        )
+
+    [13] => Array
+        (
+            [plugin] => email_templates
+            [controller] => email_templates
+            [action] => get_email_template_and_replace_constant
+        )
+
+    [14] => Array
+        (
+            [plugin] => job_roles
+            [controller] => assessments
+            [action] => index
+        )
+
+    [15] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => index
+        )
+
+    [16] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => view
+        )
+
+    [17] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => add
+        )
+
+    [18] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => edit
+        )
+
+    [19] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_role_assessments
+            [action] => delete
+        )
+
+    [20] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles_app
+            [action] => check_candidate_active
+        )
+
+    [21] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => search
+        )
+
+    [22] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => search_by_hierarchy
+        )
+
+    [23] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => select_behaviours
+        )
+
+    [24] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => set_scenarios
+        )
+
+    [25] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => check_job_role_candidate_present_or_invited
+        )
+
+    [26] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => export_report
+        )
+
+    [27] => Array
+        (
+            [plugin] => job_roles
+            [controller] => job_roles
+            [action] => export_advance_excel
+        )
+
+    [28] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => index
+        )
+
+    [29] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => view
+        )
+
+    [30] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => add
+        )
+
+    [31] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => edit
+        )
+
+    [32] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => delete
+        )
+
+    [33] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => add_response_tags
+        )
+
+    [34] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => select_behaviours
+        )
+
+    [35] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => set_scenarios
+        )
+
+    [36] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => edit_response_tags
+        )
+
+    [37] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => delete_behaviour
+        )
+
+    [38] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => add_more_behaviours
+        )
+
+    [39] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => set_more_scenarios
+        )
+
+    [40] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => set_rpa_score
+        )
+
+    [41] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => get_rpa_data
+        )
+
+    [42] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => get_rpa_data_for_detail_view
+        )
+
+    [43] => Array
+        (
+            [plugin] => job_roles
+            [controller] => rpa_assessments
+            [action] => save_rpa_data
+        )
+
+    [44] => Array
+        (
+            [plugin] => job_roles
+            [controller] => users
+            [action] => view
+        )
+
+    [45] => Array
+        (
+            [plugin] => job_roles
+            [controller] => users
+            [action] => edit
+        )
+
+    [46] => Array
+        (
+            [plugin] => job_roles
+            [controller] => users
+            [action] => image_upload
+        )
+
+    [47] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => index
+        )
+
+    [48] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => view
+        )
+
+    [49] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => format
+        )
+
+    [50] => Array
+        (
+            [plugin] => log_errors
+            [controller] => error_logs
+            [action] => change
+        )
+
+    [51] => Array
+        (
+            [plugin] => mail_queues
+            [controller] => mail_queues
+            [action] => test
+        )
+
+    [52] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => index
+        )
+
+    [53] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => view
+        )
+
+    [54] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => add
+        )
+
+    [55] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => edit
+        )
+
+    [56] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => delete
+        )
+
+    [57] => Array
+        (
+            [plugin] => organisations
+            [controller] => product_behavior_parameters
+            [action] => get_question_responses
+        )
+
+    [58] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => upload_assessment_image
+        )
+
+    [59] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => delete_assessment_image
+        )
+
+    [60] => Array
+        (
+            [plugin] => products
+            [controller] => product_themes
+            [action] => upload_icon
+        )
+
+    [61] => Array
+        (
+            [plugin] => products
+            [controller] => products_app
+            [action] => send_email_to_product_admins
+        )
+
+    [62] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => index
+        )
+
+    [63] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => view
+        )
+
+    [64] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => add
+        )
+
+    [65] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => edit
+        )
+
+    [66] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => delete
+        )
+
+    [67] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => update_instruction_flag
+        )
+
+    [68] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => assign
+        )
+
+    [69] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => search
+        )
+
+    [70] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_job_roles_and_cfa
+        )
+
+    [71] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_candidate_details
+        )
+
+    [72] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_candidate_stats
+        )
+
+    [73] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_graph_details
+        )
+
+    [74] => Array
+        (
+            [plugin] => products
+            [controller] => products_users
+            [action] => get_graph
+        )
+
+    [75] => Array
+        (
+            [plugin] => products
+            [controller] => supports
+            [action] => configurations
+        )
+
+    [76] => Array
+        (
+            [plugin] => products
+            [controller] => supports
+            [action] => query
+        )
+
+    [77] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => index
+        )
+
+    [78] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => view
+        )
+
+    [79] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => add
+        )
+
+    [80] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => edit
+        )
+
+    [81] => Array
+        (
+            [plugin] => trackings
+            [controller] => trackings
+            [action] => delete
+        )
+
+    [82] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => index
+        )
+
+    [83] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => view
+        )
+
+    [84] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => add
+        )
+
+    [85] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => edit
+        )
+
+    [86] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => delete
+        )
+
+    [87] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => export_pdf
+        )
+
+    [88] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => set_opaque_back
+        )
+
+    [89] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => set_back_color
+        )
+
+    [90] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => redirect_candidate
+        )
+
+    [91] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => api_take_assessment
+        )
+
+    [92] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => error
+        )
+
+    [93] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => candidate_assessment_check
+        )
+
+    [94] => Array
+        (
+            [plugin] => users
+            [controller] => candidates
+            [action] => details
+        )
+
+    [95] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => login
+        )
+
+    [96] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => logout
+        )
+
+    [97] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => index
+        )
+
+    [98] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => view
+        )
+
+    [99] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => add
+        )
+
+    [100] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => edit
+        )
+
+    [101] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => delete
+        )
+
+    [102] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => product_user_verify
+        )
+
+    [103] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => product_set_password
+        )
+
+    [104] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => forgot_password
+        )
+
+    [105] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => change_password
+        )
+
+    [106] => Array
+        (
+            [plugin] => users
+            [controller] => users
+            [action] => set_password
+        )
+
+    [107] => Array
+        (
+            [plugin] => users
+            [controller] => userxls
+            [action] => dummy_users
+        )
+
+)

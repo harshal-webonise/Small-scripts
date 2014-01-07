@@ -1,0 +1,593 @@
+{"AppLevelControllers":{
+    "AppController.php":[
+        {
+            "createHash":"There is no any product with this name on crucible.com"
+        },
+        {
+            "checkAccess":"Sorry, You are not authorised to use this action"
+        },
+        {
+            "redirectIfAdmin":"Sorry, You can not login to product dashbaord"
+        }
+    ],
+    "HtmlsController.php":[],
+    "MemcachesController.php":[
+        {
+            "flush":"Cache Flushed Successfully"
+        },
+        {
+            "flush":"Cache Flush error, please try after sometime"
+        }
+    ],
+    "PagesController.php":[],
+    "ResponsiveHtmlsController.php":[],
+    "SkyHtmlsController.php":[]
+}, "PluginLevelControllers":{
+    "Activities":{
+        "ActivitiesAppController.php":[],
+        "ActivitiesController.php":[]
+    },
+    "Ats":{
+        "ApisController.php":[],
+        "AtsAppController.php":[],
+        "CredentialsController.php":[],
+        "TaleosController.php":[]
+    },
+    "Crpts":{
+        "AssessmentsController.php":[],
+        "CfaCoreThemesController.php":[
+            {
+                "add":"You have added all the cultural themes available in global bank"
+            }
+        ],
+        "CfaParametersController.php":[
+            {
+                "edit":"The cultural fit assessment parameters has been saved"
+            },
+            {
+                "edit":"Cultural fit assessment parameters could not be saved. Please, try again."
+            }
+        ],
+        "CfaQuestionsController.php":[
+            {
+                "saveCfaQuestions":"The Cultural Themes question has been selected"
+            },
+            {
+                "select":"The Cultural Themes question has been selected"
+            },
+            {
+                "continue_cfa":"The Cultural Themes question has been selected"
+            }
+        ],
+        "CfaScoresController.php":[],
+        "CfasController.php":[
+            {
+                "add":"The cfa could not be saved. Please, try again."
+            },
+            {
+                "edit":"The cfa has been saved"
+            },
+            {
+                "edit":"The cfa could not be saved. Please, try again."
+            },
+            {
+                "delete":"You can not delete this cfa as it is already in use."
+            },
+            {
+                "cfa_candidates_list":"Action Not Allowed"
+            },
+            {
+                "cfa_candidates_list":"No records found to download"
+            },
+            {
+                "export_advance_excel":"No records found to download"
+            }
+        ],
+        "CountriesController.php":[
+            {
+                "search":"Search field does not exist."
+            }
+        ],
+        "CrptsAppController.php":[
+            {
+                "checkCfaCandidateActive":"Assessment can not be edited as there are live users"
+            },
+            {
+                "checkRpaCandidateActive":"Assessment can not be edited as there are live users"
+            }
+        ],
+        "ReportsController.php":[
+            {
+                "cfa_candidate":"Candidate does not exists."
+            },
+            {
+                "job_role_candidate":"Candidate does not exists."
+            },
+            {
+                "export_cfa_candidate":"Candidate does not exists."
+            },
+            {
+                "export_job_role_candidate":"Candidate does not exists."
+            },
+            {
+                "send_cfa_email":"Candidate does not exists."
+            },
+            {
+                "send_job_role_email":"Candidate does not exists."
+            }
+        ],
+        "RpaBehavioursController.php":[
+            {
+                "add":"The rpa behaviour has been saved"
+            },
+            {
+                "add":"The rpa behaviour could not be saved. Please, try again."
+            },
+            {
+                "edit":"The rpa behaviour has been saved"
+            },
+            {
+                "edit":"The rpa behaviour could not be saved. Please, try again."
+            },
+            {
+                "delete":"Rpa behaviour deleted"
+            },
+            {
+                "delete":"Rpa behaviour was not deleted"
+            },
+            {
+                "add_more":"The rpa behaviour has been saved"
+            },
+            {
+                "add_more":"The rpa behaviour could not be saved. Please, try again."
+            }
+        ],
+        "RpaResponsesController.php":[
+            {
+                "add":"This assessment is already completed"
+            },
+            {
+                "delete":"Rpa response deleted"
+            },
+            {
+                "delete":"Rpa response was not deleted"
+            },
+            {
+                "add_more":"This assessment is already completed"
+            }
+        ],
+        "RpaScenariosController.php":[
+            {
+                "add":"The Scenarios has been saved."
+            },
+            {
+                "add_response_tags":"This assessment is already completed"
+            },
+            {
+                "edit":"The rpa scenario has been saved"
+            },
+            {
+                "edit":"The rpa scenario could not be saved. Please, try again."
+            },
+            {
+                "delete":"Rpa scenario deleted"
+            },
+            {
+                "delete":"Rpa scenario was not deleted"
+            },
+            {
+                "add_more":"The Scenarios has been saved."
+            }
+        ],
+        "RpasController.php":[
+            {
+                "add":"The rpa has been saved"
+            },
+            {
+                "add":"The rpa could not be saved. Please, try again."
+            },
+            {
+                "edit":"The rpa has been saved"
+            },
+            {
+                "edit":"The rpa could not be saved. Please, try again."
+            },
+            {
+                "delete":"You can not delete this rpa as it is already in use."
+            },
+            {
+                "delete":"Rpa deleted"
+            },
+            {
+                "delete":"Rpa was not deleted"
+            },
+            {
+                "set_score":"Assessment saved successfully."
+            },
+            {
+                "update_score":"Assessment saved successfully."
+            },
+            {
+                "edit_score":"RPA saved successfully."
+            }
+        ]
+    },
+    "Customisations":{
+        "CustomisationsAppController.php":[],
+        "SkysController.php":[]
+    },
+    "Das":{
+        "AssessmentsController.php":[],
+        "CategoriesController.php":[
+            {
+                "add_core_themes":"The da organisations product has been saved"
+            },
+            {
+                "add_core_themes":"The da organisations product could not be saved. Please, try again."
+            },
+            {
+                "select":"The da organisations product has been saved"
+            },
+            {
+                "select":"The da organisations product could not be saved. Please, try again."
+            },
+            {
+                "select_behaviours":"Behaviours successfully selected"
+            },
+            {
+                "select_behaviours":"Behaviours having role scenarios are not found"
+            },
+            {
+                "add_more_behaviours":"New behaviour added successfully"
+            },
+            {
+                "add_more_behaviours":"No more behaviours found to add."
+            },
+            {
+                "edit_response_tags":"Response tags updated successfully"
+            },
+            {
+                "edit_response_tags":"Can not edit Response Tags, it is already being used"
+            }
+        ],
+        "CoreThemesController.php":[
+            {
+                "add":"You can not edit this CFA as there are active users, please try again after sometime"
+            },
+            {
+                "add":"Cultural themes selected"
+            },
+            {
+                "add":"You have added all the cultural themes available in global bank"
+            },
+            {
+                "edit_theme":"You can not edit this CFA as there are active users, please try again after sometime"
+            },
+            {
+                "delete":"Cultural theme deleted"
+            },
+            {
+                "delete":"Cultural theme was not deleted"
+            },
+            {
+                "select":"Cultural themes selected"
+            },
+            {
+                "preview":"You have deleted all behaviours, please select them again"
+            }
+        ],
+        "CrptQuestionsController.php":[
+            {
+                "add":"The Cultural Themes question has been selected"
+            },
+            {
+                "add":"You have added all the cultural themes available in global bank"
+            },
+            {
+                "edit":"The question has been saved"
+            },
+            {
+                "delete":"question deleted"
+            },
+            {
+                "select":"The Cultural Themes question has been selected"
+            }
+        ],
+        "DasAppController.php":[]
+    },
+    "JobRoles":{
+        "AssessmentsController.php":[],
+        "JobRoleAssessmentsController.php":[
+            {
+                "add":"The job role assessment has been saved"
+            },
+            {
+                "add":"The job role assessment could not be saved. Please, try again."
+            },
+            {
+                "edit":"The job role assessment has been saved"
+            },
+            {
+                "edit":"The job role assessment could not be saved. Please, try again."
+            }
+        ],
+        "JobRolesAppController.php":[
+            {
+                "checkCandidateActive":"You can not edit this RPA as there are active users, please try again after sometime"
+            }
+        ],
+        "JobRolesController.php":[
+            {
+                "view":"Invalid Job role"
+            },
+            {
+                "add":"Job Role created"
+            },
+            {
+                "add":"The job role could not be saved. Please, try again."
+            },
+            {
+                "add":"Product is not assigned sorry"
+            },
+            {
+                "add_assessments":"Invalid Job role"
+            },
+            {
+                "edit":"Invalid Job role"
+            },
+            {
+                "edit":"Can not edit further as user are invited for this job role"
+            },
+            {
+                "edit":"Job Role details successfully updated"
+            },
+            {
+                "edit":"The job role could not be saved. Please, try again."
+            },
+            {
+                "delete":"Invalid Job role"
+            },
+            {
+                "delete":"Job role deleted successfully"
+            },
+            {
+                "select_behaviours":"The Behaviors has been saved."
+            },
+            {
+                "set_scenarios":"The Behaviors has been saved."
+            },
+            {
+                "job_roles_candidates_list":"Action Not Allowed"
+            },
+            {
+                "export_report":"No records found to download"
+            },
+            {
+                "edit_job_role":"Invalid Job role"
+            },
+            {
+                "edit_job_role":"Job Role details successfully updated"
+            },
+            {
+                "edit_job_role":"The job role could not be saved. Please, try again."
+            },
+            {
+                "export_advance_excel":"No records found to download"
+            }
+        ],
+        "RpaAssessmentsController.php":[
+            {
+                "add":"The rpa assessment has been saved"
+            },
+            {
+                "add":"The rpa assessment could not be saved. Please, try again."
+            },
+            {
+                "delete":"Assessment deleted"
+            },
+            {
+                "delete":"Assessment was not deleted"
+            },
+            {
+                "add_response_tags":"This assessment is already completed"
+            },
+            {
+                "select_behaviours":"The Behaviors has been saved."
+            },
+            {
+                "set_scenarios":"The Scenarios has been saved."
+            },
+            {
+                "delete_behaviour":"Behaviour deleted"
+            },
+            {
+                "delete_behaviour":"Behaviour was not deleted"
+            },
+            {
+                "add_more_behaviours":"The Behaviors has been saved."
+            },
+            {
+                "add_more_behaviours":"There are no behaviors to choose"
+            },
+            {
+                "set_more_scenarios":"The Scenarios has been saved."
+            },
+            {
+                "set_rpa_score":"Assessment saved successfully."
+            }
+        ],
+        "UsersController.php":[
+            {
+                "edit":"File not supported, please upload jpeg,jpg,png format files"
+            },
+            {
+                "edit":"Profile successfully updated"
+            },
+            {
+                "edit":"Profile successfully updated"
+            }
+        ]
+    },
+    "Levels":{
+        "LevelsAppController.php":[]
+    },
+    "Organisations":{
+        "OrganisationsAppController.php":[],
+        "ProductBehaviorParametersController.php":[
+            {
+                "add":"The cultural fit assessment parameters has been saved"
+            },
+            {
+                "add":"The cultural fit assessment parameters could not be saved. Please, try again."
+            },
+            {
+                "edit":"The cultural fit assessment parameters has been saved"
+            },
+            {
+                "edit":"Cultural fit assessment parameters could not be saved. Please, try again."
+            },
+            {
+                "delete":"Cultural fit assessment parameters deleted"
+            },
+            {
+                "delete":"Cultural fit assessment parameters was not deleted"
+            }
+        ]
+    },
+    "Products":{
+        "ProductThemesController.php":[],
+        "ProductsAppController.php":[],
+        "ProductsUsersController.php":[
+            {
+                "add":"The products user has been saved"
+            },
+            {
+                "add":"The products user could not be saved. Please, try again."
+            },
+            {
+                "edit":"The products user has been saved"
+            },
+            {
+                "edit":"The products user could not be saved. Please, try again."
+            },
+            {
+                "delete":"Products user deleted"
+            },
+            {
+                "delete":"Products user was not deleted"
+            },
+            {
+                "status":"Invalid Key Contact, please try again."
+            },
+            {
+                "search":"Search field does not exist."
+            },
+            {
+                "get_candidate_details":"Action Not Allowed"
+            },
+            {
+                "get_graph_details":"Action Not Allowed"
+            },
+            {
+                "get_graph":"Action Not Allowed"
+            }
+        ],
+        "SupportsController.php":[
+            {
+                "configurations":"Something went wrong, please try saving again"
+            },
+            {
+                "configurations":"Support data saved successfully"
+            },
+            {
+                "configurations":"Not able to save support data, please try saving again"
+            }
+        ]
+    },
+    "Users":{
+        "CandidatesController.php":[
+            {
+                "edit":"The candidate has been saved"
+            },
+            {
+                "edit":"The candidate could not be saved. Please, try again."
+            },
+            {
+                "delete":"Candidate deleted"
+            },
+            {
+                "delete":"Candidate was not deleted"
+            },
+            {
+                "email_candidate":"Mail sent successfully"
+            }
+        ],
+        "UsersAppController.php":[],
+        "UsersController.php":[
+            {
+                "login":"The username or password you entered is incorrect."
+            },
+            {
+                "add":"The user has been saved"
+            },
+            {
+                "add":"The user could not be saved. Please, try again."
+            },
+            {
+                "edit":"The user has been saved"
+            },
+            {
+                "edit":"The user could not be saved. Please, try again."
+            },
+            {
+                "delete":"User deleted successfully"
+            },
+            {
+                "delete":"User was not deleted"
+            },
+            {
+                "product_user_verify":"Verification code is incorrect, please try again"
+            },
+            {
+                "product_user_verify":"You have successfully accepted the invitation"
+            },
+            {
+                "product_user_verify":"Verification code is incorrect, please try again"
+            },
+            {
+                "product_set_password":"Password set successfully"
+            },
+            {
+                "product_set_password":"Verification code is incorrect, please try again"
+            },
+            {
+                "product_set_password":"Verification code is incorrect, please try again"
+            },
+            {
+                "forgot_password":"Your account is deactivated by administrator, please contact administrator"
+            },
+            {
+                "forgot_password":"We have sent you an email with instructions for changing your password."
+            },
+            {
+                "forgot_password":"Email address is not exists"
+            },
+            {
+                "change_password":"Password has been updated."
+            },
+            {
+                "change_password":"Password can not be updated, please try again"
+            },
+            {
+                "change_password":"Invalid old password. Please enter valid old password"
+            },
+            {
+                "set_password":"Your password has been set. Now you can login to the system"
+            },
+            {
+                "set_password":"Your verification link is incorrect ,Please try again"
+            }
+        ],
+        "UserxlsController.php":[]
+    }
+}}
