@@ -1,0 +1,30 @@
+ foreach ($hMessages2 as $divMessage2) {
+
+            $divArray[$path][$viewName]['h2'][] = $divMessage2->nodeValue;
+            $divArray[$path][$viewName]['h2'][] = $divMessage2->nodeValue;
+//        $resultString.=$path.'$$$'.$viewName.'$$$'.'label'.'$$$'.$tag->nodeValue."\n";
+        }
+        foreach ($hMessages3 as $divMessage3) {
+
+            $divArray[$path][$viewName]['h3'][] = $divMessage3->nodeValue;
+            $divArray[$path][$viewName]['h3'][] = $divMessage3->nodeValue;
+//        $resultString.=$path.'$$$'.$viewName.'$$$'.'label'.'$$$'.$tag->nodeValue."\n";
+        }
+        foreach ($hMessages4 as $divMessage4) {
+
+            $divArray[$path][$viewName]['h4'][] = $divMessage4->nodeValue;
+            $divArray[$path][$viewName]['h4'][] = $divMessage4->nodeValue;
+//        $resultString.=$path.'$$$'.$viewName.'$$$'.'label'.'$$$'.$tag->nodeValue."\n";
+        }
+        foreach ($hMessages5 as $divMessage5) {
+
+            $divArray[$path][$viewName]['h5'][] = $divMessage5->nodeValue;
+            $divArray[$path][$viewName]['h5'][] = $divMessage5->nodeValue;
+//        $resultString.=$path.'$$$'.$viewName.'$$$'.'label'.'$$$'.$tag->nodeValue."\n";
+        }
+        foreach ($hMessages6 as $divMessage6) {
+
+            $divArray[$path][$viewName]['h6'][] = $divMessage6->nodeValue;
+            $divArray[$path][$viewName]['h6'][] = $divMessage6->nodeValue;
+//        $resultString.=$path.'$$$'.$viewame.'$$$'.'label'.'$$$'.$tag->nodeValue."\n";
+        }*/

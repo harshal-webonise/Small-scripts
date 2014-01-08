@@ -1,5 +1,5 @@
 <?php
-$basePath = '/home/weboniselab/projects/apps2013/php/Crucible-CRT/app/';
+$basePath = '/home/webonise/projects/apps2013/php/Crucible-CRT/app/';
 
 $appLevelExcludeArray = array(
     'Config', 'Console', 'Lib', 'Locale', 'Model', 'Test', 'tmp',
@@ -19,7 +19,7 @@ $appLevelControllers = array();
 $completeControllerData = array();
 $dataAppLevel           = array();
 
-
+$viewResultString='';
 foreach ($appLevelFolders as $appLevelFolder) {
 
     if (in_array($appLevelFolder, $appLevelExcludeArray)) {
@@ -41,17 +41,33 @@ foreach ($appLevelFolders as $appLevelFolder) {
     }
 
 
-    /* $appLevelViewsPath = $basePath . 'View';
+     $appLevelViewsPath = $basePath . 'View';
 
      if (!is_dir($appLevelViewsPath)) {
          continue;
      }
-     $appLevelViews = scandir($appLevelViewsPath);*/
+     $appLevelViews = scandir($appLevelViewsPath);
 
     //app level
-    /* foreach ($appLevelViews as $appLevelView) {
+     foreach ($appLevelViews as $appLevelView) {
+         if (in_array($appLevelView, $exclude)) {
+             continue;
+         }
+         $viewFolderPath = $appLevelViewsPath . '/'.$appLevelView;
+         $views          = scandir($viewFolderPath);
+         foreach ($views as $view) {
+             if (in_array($view, $exclude)) {
+                 continue;
+             }
+             $viewContent=getViewsStaticData($viewFolderPath, $view);
 
-     }*/
+             $viewsContents['app'][$appLevelView][]=$viewContent;
+
+             if(!empty($viewContent)){
+                 $viewResultString.='app'.'$$$'.$appLevelView.'$$$'.$viewContent."\n";
+             }
+         }
+     }
 }
 $completeControllerData['AppLevelControllers'] = $dataAppLevel;
 
@@ -59,6 +75,7 @@ $appLevelPluginsPath = $basePath . 'Plugin';
 $appLevelPlugins     = scandir($appLevelPluginsPath);
 
 $pluginLevelControllerData = array();
+
 foreach ($appLevelPlugins as $pluginId => $pluginName) {
 
     if (in_array($pluginName, $pluginLevelExcludeArray)) {
@@ -75,7 +92,7 @@ foreach ($appLevelPlugins as $pluginId => $pluginName) {
     $pluginLevelViews         = scandir($pluginLevelViewsBasePath);
 
     // for each controller at app level
-$viewResultString='';
+
     foreach ($pluginLevelControllers as $key => $pluginLevelController) {
 
         if (in_array($pluginLevelController, $exclude)) {
@@ -100,15 +117,18 @@ $viewResultString='';
             $viewContent=getViewsStaticData($viewFolderPath, $view);
 
             $viewsContents[$pluginName][$pluginLevelView][]=$viewContent;
-            $viewResultString.=$pluginName.'$$$'.$pluginLevelView.'$$$'.$viewContent."\n";
+
+            if(!empty($viewContent)){
+            $viewResultString.=$pluginName.','.$pluginLevelView.','.$viewContent."\n";
+            }
         }
     }
 }
-print_r($viewResultString);die;
+die;
 $completeControllerData['PluginLevelControllers'] = $pluginLevelControllerData;
-print_r(json_encode($viewsContents));
-file_put_contents("/home/weboniselab/projects/apps2013/php/testApp/test.smallapp.com/view_data.json",json_encode($viewsContents));
-file_put_contents("/home/weboniselab/projects/apps2013/php/testApp/test.smallapp.com/controller_data.json",json_encode($completeControllerData));
+//print_r(json_encode($viewsContents));
+//file_put_contents("/home/weboniselab/projects/apps2013/php/testApp/test.smallapp.com/view_data.json",json_encode($viewsContents));
+//file_put_contents("/home/weboniselab/projects/apps2013/php/testApp/test.smallapp.com/controller_data.json",json_encode($completeControllerData));
 
 print_r('-----------------------end---------------------');
 
@@ -139,16 +159,16 @@ function getViewsStaticData($path, $viewName) {
     $fileHandle = fopen($path . '/' . $viewName, 'r');
     $viewPlaceHolders = array();
     $alertMessagesArray=array();
-    $result=array();
+    $parseData=array();
     $resultString='';
     while (($buffer = fgets($fileHandle)) !== false) {
-        if (preg_match('/[\'|"]placeholder[\'|"]+[\s=>\']*([a-zA-Z\s-?]*)[\'|"]/', $buffer,
+        if (preg_match('/\'placeholder\'[^\']+\'([^\'"]+)\'/', $buffer,
             $placeHolderMatches)
         ) {
             if (!empty($placeHolderMatches[1]) && isset($placeHolderMatches[1])) {
                 $viewPlaceHolders[$viewName]['place_holders'][] = $placeHolderMatches[1];
-                $result[$path][$viewName]['place_holders'][] = $placeHolderMatches[1];
-                $resultString.=$path.'$$$'.$viewName.'$$$'.'place_holder'.'$$$'.$placeHolderMatches[1]."\n";
+                $parseData[$path][$viewName]['place_holders'][] = $placeHolderMatches[1];
+                $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'place_holder'.'|$$$|'.$placeHolderMatches[1]."\n";
             }
 
         }
@@ -157,18 +177,18 @@ function getViewsStaticData($path, $viewName) {
             $linkMatches))
         ) {
             $data[$path][$viewName]['link'][] = ($linkMatches[0]);
-            $result[$path][$viewName]['link'][] = ($linkMatches[0]);
-//            $resultString.=$path.'$$$'.$viewName.'$$$'.'link'.'$$$'.$linkMatches[0]."\n";
+            $parseData[$path][$viewName]['link'][] = ($linkMatches[0]);
+            $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'link'.'|$$$|'.$linkMatches[0]."\n";
 
         }
 
-        if (preg_match('/[\'|"]title[\'|"]+[\s=>\']*([a-zA-Z\s-]*)[\'|"]/', $buffer,
+        if (preg_match('/\'title\'[^\']+\'([^\'"]+)\'/', $buffer,
             $titleMatches)
         ) {
             if (!empty($titleMatches[1]) && isset($titleMatches[1])) {
                 $viewTitles[$viewName]['title'][] = $titleMatches[1];
-                $result[$path][$viewName]['title'][] = $titleMatches[1];
-                $resultString.=$path.'$$$'.$viewName.'$$$'.'title'.'$$$'.$titleMatches[1]."\n";
+                $parseData[$path][$viewName]['title'][] = $titleMatches[1];
+                $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'title'.'|$$$|'.$titleMatches[1]."\n";
             }
 
         }
@@ -177,47 +197,159 @@ function getViewsStaticData($path, $viewName) {
         ) {
             if (!empty($submitButtonMatches[1]) && isset($submitButtonMatches[1])) {
                 $viewSubmitButtonMatches[$viewName]['submit'][] = $submitButtonMatches[1];
-                $result[$path][$viewName]['submit'][] = $submitButtonMatches[1];
-                $resultString.=$path.'$$$'.$viewName.'$$$'.'Button'.'$$$'.$submitButtonMatches[1]."\n";
+                $parseData[$path][$viewName]['submit'][] = $submitButtonMatches[1];
+                $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'Button'.'|$$$|'.$submitButtonMatches[1]."\n";
             }
 
         }
 
-        if (preg_match('/alert\((.+?)\)/', $buffer,
+//        message:"([^"]+)"
+        if (preg_match('/message:"([^"]+)"/', $buffer,
+            $validationMessages)
+        ) {
+            if (!empty($validationMessages[1]) && isset($validationMessages[1])) {
+                $viewValidationMessages[$viewName]['validation_messages'][] = $validationMessages[1];
+                $parseData[$path][$viewName]['validation_messages'][] = $validationMessages[1];
+                $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'validation_messages'.'|$$$|'.$validationMessages[1]."\n";
+            }
+
+        }
+
+
+        if (preg_match('/alert[^)]\'([^\']+)\'/', $buffer,
             $alertMessagesMatches)
         ) {
             if (!empty($alertMessagesMatches[1]) && isset($alertMessagesMatches[1])) {
                 $alertMessagesArray[$viewName]['alert_messages'][] = $alertMessagesMatches[1];
-                $result[$path][$viewName]['alert_messages'][] = $alertMessagesMatches[1];
-                $resultString.=$path.'$$$'.$viewName.'$$$'.'alert_message'.'$$$'.$alertMessagesMatches[1]."\n";
+                $parseData[$path][$viewName]['alert_messages'][] = $alertMessagesMatches[1];
+                $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'alert_message'.'|$$$|'.$alertMessagesMatches[1]."\n";
+            }
+        }
+
+        if (preg_match('/<div[^=]+="toolTipInner">([^<])+$/', $buffer,
+            $toolTipMsgMatches)
+        ) {
+                if (!empty($toolTipMsgMatches[0]) && isset($toolTipMsgMatches[0])) {
+                $toolMessagesArray[$viewName]['tool_tip'][] = $toolTipMsgMatches[0];
+                    $parseData[$path][$viewName]['tool_tip'][] = $toolTipMsgMatches[0];
+                $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'tool_tip'.'|$$$|'.$toolTipMsgMatches[0]."\n";
             }
 
         }
+
+        if (preg_match('/<p[^>]+>([^<]+)<\/p>/', $buffer,
+            $paraMsgMatches)
+        ) {
+            if (!empty($paraMsgMatches[0]) && isset($paraMsgMatches[0])) {
+                $toolMessagesArray[$viewName]['para_message'][] = $paraMsgMatches[0];
+                $parseData[$path][$viewName]['para_message'][] = $paraMsgMatches[0];
+                $resultString.=$path.'|$$$|'.$viewName.'|$$$|'.'para_message'.'|$$$|'.$paraMsgMatches[0]."\n";
+            }
+        }
     }
+
     $myhtml = file_get_contents($path . '/' . $viewName);
     $doc = new DOMDocument();
     if(!empty($myhtml)){
     libxml_use_internal_errors(true);
     $doc->loadHTML($myhtml);
     $tags = $doc->getElementsByTagName('label');
-        $options = $doc->getElementsByTagName('select');
+    $options = $doc->getElementsByTagName('select');
+    $h1Messages=$doc->getElementsByTagName('h1');
+    $divMessages=$doc->getElementsByTagName('div');
+    $h2Messages=$doc->getElementsByTagName('h2');
+    $h3Messages=$doc->getElementsByTagName('h3');
+    $h4Messages=$doc->getElementsByTagName('h4');
+    $h5Messages=$doc->getElementsByTagName('h5');
+    $h6Messages=$doc->getElementsByTagName('h6');
+    $spanMessages=$doc->getElementsByTagName('span');
 
-    $tagArray = array();
-    foreach ($tags as $tag) {
-        $tagArray[$path][$viewName]['labels'][] = $tag->nodeValue;
-        $result[$path][$viewName]['labels'][] = $tag->nodeValue;
-//        $resultString.=$path.'$$$'.$viewName.'$$$'.'label'.'$$$'.$tag->nodeValue."\n";
-    }
+        $fullViewPath=$path.'|$$$|'.$viewName.'|$$$|';
 
-        $optionsArray=array();
-        foreach($options as $option){
-            $optionsArray[$viewName]['options'][]=$option->nodeValue;
-            $result[$path][$viewName]['options'][]=$option->nodeValue;
-//            $resultString.=$path.'$$$'.$viewName.'$$$'.'options'.'$$$'.$tag->nodeValue."\n";
+        $dataArray= formattedData($divMessages,'div');
+        if(!empty($dataArray) && isset($dataArray)){
+            foreach($dataArray as $actualData){
+                $resultString.=$fullViewPath.'|$$$|'.'div'.$actualData."\n";
+            }
+            $parseData[$path][$viewName]['div']=$dataArray;
         }
-        /*if(isset($result)&& !empty($result)){
-            print_r($result);die;
-        }*/
+        $dataArray= formattedData($tags,'label');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['label']=$dataArray;
+        }
+        $dataArray= formattedData($options,'select');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['select']=$dataArray;
+        }
+        $dataArray= formattedData($h1Messages,'h1');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['h1']=$dataArray;
+        }
+        $dataArray= formattedData($h2Messages,'h2');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['h2']=$dataArray;
+        }
+        $dataArray= formattedData($h3Messages,'h3');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['h3']=$dataArray;
+        }
+        $dataArray= formattedData($h4Messages,'h4');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['h4']=$dataArray;
+        }
+
+        $dataArray= formattedData($h5Messages,'h5');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['h5']=$dataArray;
+        }
+        $dataArray= formattedData($h6Messages,'h6');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['h6']=$dataArray;
+        }
+        $dataArray= formattedData($spanMessages,'span');
+        if(!empty($dataArray)){
+            $parseData[$path][$viewName]['span']=$dataArray;
+        }
     }
+    if(!empty($parseData)){
+        print_r($parseData);
+    }
+
     return $resultString;
+}
+
+function formattedData($object,$attribute){
+    $resultString='';
+    $result=array();
+    foreach($object as $data){
+        $divArray[$attribute][] = $data->nodeValue;
+        $dataArray = getCompleteArray(strip_unnecessary_content($data->nodeValue));
+        if(!empty($dataArray)) {
+            $result[] = $dataArray;
+        }
+//        $resultString.=$fileName.','.$attribute.','.strip_tags($data->nodeValue)."\n";
+    }
+    return reset($result);
+}
+
+
+function getCompleteArray($data) {
+    $newData = null;
+    foreach($data as $value) {
+        $value = trim($value);
+        if(!empty($value)) {
+            $newData[] = $value;
+        }
+    }
+    return $newData;
+}
+
+
+
+
+function strip_unnecessary_content($data){
+    //$data = htmlentities($data, null, 'utf-8');
+    $data = str_replace("&nbsp;", "", $data);
+    $data = trim(strip_tags($data));
+    return explode('#####', trim(preg_replace("/\r\n|\r|\n/", '#####', $data)));
 }
